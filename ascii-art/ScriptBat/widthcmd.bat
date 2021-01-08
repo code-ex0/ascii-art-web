@@ -1,0 +1,1 @@
+powershell.exe -noprofile -command $host.ui.rawui.WindowSize.width

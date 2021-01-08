@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Axentix Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/css/axentix.min.css">
+</head>
+
+<body class="layout with-sidenav">
+<header>
+    <nav class="navbar shadow-1 primary">
+        <p class="navbar-brand">Ascii-Art web</p>
+        <div class="navbar-menu ml-auto">
+            <button data-target="example-sidenav"
+                    class="btn rounded-1 press amaranth dark-1 sidenav-trigger hide-md-up">
+                Open sidenav
+            </button>
+        </div>
+    </nav>
+</header>
+<div id="example-sidenav" data-ax="sidenav" class="sidenav shadow-1 large fixed white">
+    <a href="/" class='sidenav-link {{if(eq .Active "home")}}active{{else}}{{end}}'>Home</a>
+    <a href="reverse" class='sidenav-link {{if(eq .Active "reverse")}}active{{else}}{{end}}'>Reverse</a>
+    <a href="output" class='sidenav-link {{if(eq .Active "output")}}active{{else}}{{end}}'>Output</a>
+    <a href="print" class='sidenav-link {{if(eq .Active "print")}}active{{else}}{{end}}'>Print</a>
+    <a href="#" class='sidenav-link'>Coming soon</a>
+</div>
+
+<main>
+
+    {{if(eq .Active "print")}}
+    <form method='post' class="form-material m-5" name="test">
+        <div class="grix xs1 sm3">
+            <div class="form-field col-sm2">
+                <input type="text" name="print-text" id="print-text" placeholder="je suis un exemple" class="form-control rounded-1" value="{{.Data.Text}}"/>
+                <label for="print-text">texte a convertire</label>
+            </div>
+            <div class="form-field">
+                <label class="txt-center" for="select_type-text">choisi le type de texte</label>
+                <select class="form-control rounded-1" id="select_type-text" name="select_type-text">
+                    <option value="standard" {{if(eq .Data.TextType "standard")}}selected{{end}}>standard</option>
+                    <option value="shadow" {{if(eq .Data.TextType "shadow")}}selected{{end}}>shadow</option>
+                    <option value="thinkertoy" {{if(eq .Data.TextType "thinkertoy")}}selected{{end}}>thinkertoy</option>
+                </select>
+            </div>
+            <div class="form-field col-sm3">
+                <div class="grix xs1 sm3">
+                    <div class="form-field col-sm1">
+                        <label class="txt-center" for="select-color">Basic selector color</label>
+                        <select class="form-control rounded-1" id="select-color" name="select-color">
+                            <option value="black" {{if(eq .Data.Color "black")}}selected{{end}}>black</option>
+                            <option value="red" {{if(eq .Data.Color "red")}}selected{{end}}>red</option>
+                            <option value="yellow" {{if(eq .Data.Color "yellow")}}selected{{end}}>yellow</option>
+                            <option value="green" {{if(eq .Data.Color "green")}}selected{{end}}>green</option>
+                            <option value="blue" {{if(eq .Data.Color "blue")}}selected{{end}}>bleu</option>
+                            <option value="gray" {{if(eq .Data.Color "gray")}}selected{{end}}>gray</option>
+                            <option value="pink" {{if(eq .Data.Color "pink")}}selected{{end}}>pink</option>
+                            <option value="purple" {{if(eq .Data.Color "purple")}}selected{{end}}>purple</option>
+                            <option value="white" {{if(eq .Data.Color "white")}}selected{{end}}>white</option>
+                        </select>
+                    </div>
+                    <div class="form-field col-sm1 center">
+                        <label class="form-check">
+                            <input type="radio" name="yon" value="basic" {{if(eq .Data.ColorType "basic")}}checked{{end}}{{if(eq .Data.ColorType "")}}checked{{end}} />
+                            <span>basic color</span>
+                        </label>
+                        <label class="form-check">
+                            <input type="radio" name="yon" value="advanced"{{if(eq .Data.ColorType "advanced")}}checked{{end}}/>
+                            <span>advanced color</span>
+                        </label>
+                    </div>
+                    <div class="form-field col-sm1">
+                        <input type="color" id="advanced-color" name="advanced-color" class="form-control rounded-1"  value="{{.Data.Color}}">
+                        <label for="advanced-color">Advanced select color</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-field col-sm3">
+                <button class="btn rounded-1 blue press  vself-center" type="submit">Print</button>
+            </div>
+        </div>
+    </form>
+    {{if .Print}}
+    <pre style='color: {{.Data.Color}}; margin-left: 20px; margin-top: 10px'>{{.Text}}</pre>
+    {{end}}
+    {{end}}
+</main>
+
+<footer class="footer primary">
+    Copyright © 2020 - louis sasse
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/js/axentix.min.js"></script>
+</body>
+</html>
