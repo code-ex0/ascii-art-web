@@ -2,10 +2,9 @@ package reverse
 
 import (
 	"../struct"
-	"fmt"
 )
 
-func Reverse(file []string, alphabet *_struct.Alphabet) {
+func Reverse(file []string, alphabet *_struct.Alphabet) (result string) {
 	lastIndex := 0
 	file = file[:len(file)-1]
 	for lastIndex <= len(file[0])-2 {
@@ -23,10 +22,10 @@ func Reverse(file []string, alphabet *_struct.Alphabet) {
 			}
 			if find {
 				lastIndex += len(temp[0])
-				fmt.Print(string(i))
+				result += string(i)
 				break
 			}
 		}
 	}
-	fmt.Print("\n")
+	return
 }

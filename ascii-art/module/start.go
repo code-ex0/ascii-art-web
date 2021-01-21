@@ -24,13 +24,13 @@ func Start(args []string) string {
 			}
 		} else if v, found := param["reverse"]; found {
 			if strings.HasSuffix(v, ".txt") {
-				f, err := os.Open("output/" + v)
+				f, err := os.Open("ascii-art/output/" + v)
 				if err != nil {
 					log.Fatal(err)
 				}
 				temp, _ := ioutil.ReadAll(f)
 				f.Close()
-				reverse.Reverse(strings.Split(string(temp), "\n"), GetAlphabet(autoDetectTypeFile(v)))
+				return reverse.Reverse(strings.Split(string(temp), "\n"), GetAlphabet(autoDetectTypeFile(v)))
 			}
 		} else {
 			return align.Align(PrintSentence(GetSentence(GetAlphabet(fs.GetAlphabetFile(args)), true, args[0])), func() string {
@@ -58,7 +58,7 @@ func getParam(args []string) map[string]string {
 }
 
 func autoDetectTypeFile(file string) []string {
-	temp, _ := os.Open("output/" + file)
+	temp, _ := os.Open("ascii-art/output/" + file)
 	standard := false
 	shadow := false
 	thinkertoy := false
@@ -87,7 +87,7 @@ func autoDetectTypeFile(file string) []string {
 		typefile = "thinkertoy.txt"
 	}
 
-	a, _ := os.Open("file/" + typefile)
+	a, _ := os.Open("ascii-art/file/" + typefile)
 	b, _ := ioutil.ReadAll(a)
 	a.Close()
 	return strings.Split(string(b), "\r\n")

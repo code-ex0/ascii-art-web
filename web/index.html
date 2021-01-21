@@ -30,19 +30,112 @@
 
 <main>
 
+    {{if(eq .Active "reverse")}}
+    {{ if not .ReverseData.Files}}
+    <div></div>
+    {{else}}
+    <div class="responsive-table">
+        <table class="table striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>File name</th>
+                <th>Reverse File</th>
+                <th>Delete File</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{ range $key, $value := .ReverseData.Files}}
+            <tr>
+                <td>{{$key}}</td>
+                <td>{{$value.Name}}</td>
+                <td><a class="btn small green light-1 rounded-2 light-shadow-1" href="reverse/use-file/{{$value.Name}}">Use
+                    file {{$value.Name}}</a></td>
+                <td><a class="btn small modal-trigger pointer red light-1 rounded-2 light-shadow-1"
+                       data-target="modal-delete-file-{{$key}}">Delete file {{$value.Name}}</a></td>
+            </tr>
+            <div class="modal shadow-1 white rounded-3" id="modal-delete-file-{{$key}}" data-ax="modal">
+                <div class="modal-header">
+                    {{$value.Name}}
+                    <button data-target="modal-delete-file-{{$key}}" class="modal-trigger">
+                        <i class="fas fa-times"></i> <!-- Use font awesome -->
+                    </button>
+                </div>
+                <div class="modal-content">
+                    are you sure to delete {{$value.Name}}
+                    warning the delete is definitive
+                </div>
+                <div class="modal-footer">
+                    <a data-target="modal-delete-file-{{$key}}"
+                       class="ml-auto btn shadow-1 rounded-1 small primary modal-trigger">Close</a>
+                    <a data-target="modal-delete-file-{{$key}}" class="ml-auto btn shadow-1 rounded-1 small primary"
+                       href="reverse/delete/{{$value.Name}}">confirm</a>
+                </div>
+            </div>
+            {{end}}
+            </tbody>
+        </table>
+    </div>
+    {{end}}
+    <form method='post' enctype="multipart/form-data" action="upload-file-reverse" class="form-material m-5" name="reverse">
+        <div class="grix xs1 sm5">
+            <div class="form-file col-sm4">
+                <label for="multiplefiles" class="btn primary rounded-1 shadow-1">Select file</label>
+                <input name="multiplefiles" id="multiplefiles" type="file" multiple accept=".txt"/>
+                <div class="form-file-path"></div>
+            </div>
+            <div class="form-field col-sm1">
+                <button class="btn rounded-1 blue press vself-center" type="submit">Upload file</button>
+            </div>
+        </div>
+    </form>
+    {{if .ReverseData.Result}}
+    <p style="margin-left: 20px; margin-top: 10px">Result : {{ .ReverseData.Result }}</p>
+    <pre style="margin-left: 20px; margin-top: 10px">{{ .ReverseData.Cat }}</pre>
+    {{end}}
+    {{end}}
+
+
+    {{if(eq .Active "output")}}
+    <form method='post' class="form-material m-5" name="output">
+        <div class="grix xs1 sm3">
+            <div class="form-field col-sm3">
+                <input type="text" name="output-text" id="output-text" placeholder="je suis un exemple" class="form-control rounded-1"/>
+                <label for="output-text">text has convert</label>
+            </div>
+            <div class="form-field col-sm2">
+                <input type="text" name="output-file_name" id="output-file_name" placeholder="test.txt" class="form-control rounded-1"/>
+                <label for="output-file_name">Name file</label>
+            </div>
+            <div class="form-field col-sm1">
+                <label class="txt-center" for="output-select_type-text">Alphabet type</label>
+                <select class="form-control rounded-1" id="output-select_type-text" name="output-select_type-text">
+                    <option value="standard">standard</option>
+                    <option value="shadow">shadow</option>
+                    <option value="thinkertoy">thinkertoy</option>
+                </select>
+            </div>
+            <div class="form-field col-sm3">
+                <button class="btn rounded-1 blue press  vself-center" type="submit">Print</button>
+            </div>
+        </div>
+    </form>
+    <pre style="margin-left: 20px; margin-top: 10px">{{.OutputData.Result}}</pre>
+    {{end}}
+
     {{if(eq .Active "print")}}
-    <form method='post' class="form-material m-5" name="test">
+    <form method='post' class="form-material m-5" name="print">
         <div class="grix xs1 sm3">
             <div class="form-field col-sm2">
-                <input type="text" name="print-text" id="print-text" placeholder="je suis un exemple" class="form-control rounded-1" value="{{.Data.Text}}"/>
+                <input type="text" name="print-text" id="print-text" placeholder="je suis un exemple" class="form-control rounded-1" value="{{.PrintData.Text}}"/>
                 <label for="print-text">texte a convertire</label>
             </div>
             <div class="form-field">
-                <label class="txt-center" for="select_type-text">choisi le type de texte</label>
+                <label class="txt-center" for="select_type-text">Alphabet type</label>
                 <select class="form-control rounded-1" id="select_type-text" name="select_type-text">
-                    <option value="standard" {{if(eq .Data.TextType "standard")}}selected{{end}}>standard</option>
-                    <option value="shadow" {{if(eq .Data.TextType "shadow")}}selected{{end}}>shadow</option>
-                    <option value="thinkertoy" {{if(eq .Data.TextType "thinkertoy")}}selected{{end}}>thinkertoy</option>
+                    <option value="standard" {{if(eq .PrintData.TextType "standard")}}selected{{end}}>standard</option>
+                    <option value="shadow" {{if(eq .PrintData.TextType "shadow")}}selected{{end}}>shadow</option>
+                    <option value="thinkertoy" {{if(eq .PrintData.TextType "thinkertoy")}}selected{{end}}>thinkertoy</option>
                 </select>
             </div>
             <div class="form-field col-sm3">
@@ -50,29 +143,30 @@
                     <div class="form-field col-sm1">
                         <label class="txt-center" for="select-color">Basic selector color</label>
                         <select class="form-control rounded-1" id="select-color" name="select-color">
-                            <option value="black" {{if(eq .Data.Color "black")}}selected{{end}}>black</option>
-                            <option value="red" {{if(eq .Data.Color "red")}}selected{{end}}>red</option>
-                            <option value="yellow" {{if(eq .Data.Color "yellow")}}selected{{end}}>yellow</option>
-                            <option value="green" {{if(eq .Data.Color "green")}}selected{{end}}>green</option>
-                            <option value="blue" {{if(eq .Data.Color "blue")}}selected{{end}}>bleu</option>
-                            <option value="gray" {{if(eq .Data.Color "gray")}}selected{{end}}>gray</option>
-                            <option value="pink" {{if(eq .Data.Color "pink")}}selected{{end}}>pink</option>
-                            <option value="purple" {{if(eq .Data.Color "purple")}}selected{{end}}>purple</option>
-                            <option value="white" {{if(eq .Data.Color "white")}}selected{{end}}>white</option>
+                            <option value="black" {{if(eq .PrintData.Color "black")}}selected{{end}}>black</option>
+                            <option value="red" {{if(eq .PrintData.Color "red")}}selected{{end}}>red</option>
+                            <option value="yellow" {{if(eq .PrintData.Color "yellow")}}selected{{end}}>yellow</option>
+                            <option value="green" {{if(eq .PrintData.Color "green")}}selected{{end}}>green</option>
+                            <option value="blue" {{if(eq .PrintData.Color "blue")}}selected{{end}}>bleu</option>
+                            <option value="gray" {{if(eq .PrintData.Color "gray")}}selected{{end}}>gray</option>
+                            <option value="pink" {{if(eq .PrintData.Color "pink")}}selected{{end}}>pink</option>
+                            <option value="purple" {{if(eq .PrintData.Color "purple")}}selected{{end}}>purple</option>
+                            <option value="white" {{if(eq .PrintData.Color "white")}}selected{{end}}>white</option>
                         </select>
                     </div>
                     <div class="form-field col-sm1 center">
                         <label class="form-check">
-                            <input type="radio" name="yon" value="basic" {{if(eq .Data.ColorType "basic")}}checked{{end}}{{if(eq .Data.ColorType "")}}checked{{end}} />
+                            <input type="radio" name="yon" value="basic" {{if(eq .PrintData.ColorType "basic")}}checked{{end}}{{if(eq .PrintData.ColorType "")}}checked{{end}} />
                             <span>basic color</span>
                         </label>
                         <label class="form-check">
-                            <input type="radio" name="yon" value="advanced"{{if(eq .Data.ColorType "advanced")}}checked{{end}}/>
+                            <input type="radio" name="yon" value="advanced" {{if(eq .PrintData.ColorType "advanced")}}checked{{end}}/>
                             <span>advanced color</span>
                         </label>
                     </div>
                     <div class="form-field col-sm1">
-                        <input type="color" id="advanced-color" name="advanced-color" class="form-control rounded-1"  value="{{.Data.Color}}">
+                        <input type="color" id="advanced-color" name="advanced-color" class="form-control rounded-1"
+                               value="{{.PrintData.Color}}">
                         <label for="advanced-color">Advanced select color</label>
                     </div>
                 </div>
@@ -82,8 +176,8 @@
             </div>
         </div>
     </form>
-    {{if .Print}}
-    <pre style='color: {{.Data.Color}}; margin-left: 20px; margin-top: 10px'>{{.Text}}</pre>
+    {{if .PrintData.Result}}
+    <pre style='color: {{.PrintData.Color}}; margin-left: 20px; margin-top: 10px'>{{.PrintData.Result}}</pre>
     {{end}}
     {{end}}
 </main>
