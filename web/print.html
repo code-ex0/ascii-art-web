@@ -29,135 +29,6 @@
 </div>
 
 <main>
-
-    {{if(eq .Active "reverse")}}
-    {{ if not .ReverseData.Files}}
-    <div></div>
-    {{else}}
-
-    <div class="responsive-table">
-        <table class="table striped">
-            <thead>
-            <tr>
-                <th>#</th>
-                <th>File name</th>
-                <th>Reverse File</th>
-                <th>Delete File</th>
-            </tr>
-            </thead>
-            <tbody>
-            {{ range $key, $value := .ReverseData.Files}}
-            <tr>
-                <td>{{$key}}</td>
-                <td>{{$value.Name}}</td>
-                <td><a id="use-reverse-{{$key}}" class="btn small green light-1 rounded-2 light-shadow-1 reverse" href="reverse?a=use-file&f={{$value.Name}}">Use file {{$value.Name}}</a></td>
-                <td><a class="btn small modal-trigger pointer red light-1 rounded-2 light-shadow-1"
-                       data-target="modal-delete-file-{{$key}}">Delete file {{$value.Name}}</a></td>
-            </tr>
-            <div class="modal shadow-1 white rounded-3" id="modal-delete-file-{{$key}}" data-ax="modal">
-                <div class="modal-header">
-                    {{$value.Name}}
-                    <button data-target="modal-delete-file-{{$key}}" class="modal-trigger">
-                        <i class="fas fa-times"></i> <!-- Use font awesome -->
-                    </button>
-                </div>
-                <div class="modal-content">
-                    are you sure to delete {{$value.Name}}
-                    warning the delete is definitive
-                </div>
-                <div class="modal-footer">
-                    <a data-target="modal-delete-file-{{$key}}"
-                       class="ml-auto btn shadow-1 rounded-1 small primary modal-trigger">Close</a>
-                    <a data-target="modal-delete-file-{{$key}}" class="ml-auto btn shadow-1 rounded-1 small primary"
-                       href="reverse/delete/{{$value.Name}}/0">confirm</a>
-                </div>
-            </div>
-            {{end}}
-            </tbody>
-        </table>
-    </div>
-<!--    <script>
-        function myFunction() {
-            let Window;
-            if (window.innerWidth < 960) {
-                Window = window.innerWidth - 80;
-            } else {
-                Window = window.innerWidth - 430;
-            }
-            let a = document.getElementsByClassName("reverse").length;
-            console.log(a)
-            for (let z = 0; z < a; z++) {
-                var link = document.getElementById("use-reverse-" + z);
-                link.setAttribute('href', link.getAttribute('href')+"/"+Window);
-            }
-
-
-        }
-        myFunction();
-    </script>-->
-    {{end}}
-    <form method='post' enctype="multipart/form-data" action="upload-file-reverse" class="form-material m-5" name="reverse">
-        <div class="grix xs1 sm5">
-            <div class="form-file col-sm4">
-                <label for="multiplefiles" class="btn primary rounded-1 shadow-1">Select file</label>
-                <input name="multiplefiles" id="multiplefiles" type="file" multiple accept=".txt"/>
-                <div class="form-file-path"></div>
-            </div>
-            <div class="form-field col-sm1">
-                <button class="btn rounded-1 blue press vself-center" type="submit">Upload file</button>
-            </div>
-        </div>
-    </form>
-
-    {{if .ReverseData.Result}}
-    <p style="margin-left: 20px; margin-top: 10px">Result : {{ .ReverseData.Result }}</p>
-    <pre style="margin-left: 20px; margin-top: 10px">{{ .ReverseData.Cat }}</pre>
-    {{end}}
-    {{end}}
-
-
-    {{if(eq .Active "output")}}
-    <form method='post' class="form-material m-5" name="output">
-        <div class="grix xs1 sm3">
-            <div class="form-field col-sm3">
-                <input type="text" name="output-text" id="output-text" placeholder="je suis un exemple" class="form-control rounded-1"/>
-                <label for="output-text">text has convert</label>
-            </div>
-            <div class="form-field col-sm2">
-                <input type="text" name="output-file_name" id="output-file_name" placeholder="test.txt" class="form-control rounded-1"/>
-                <label for="output-file_name">Name file</label>
-            </div>
-            <div class="form-field col-sm1">
-                <label class="txt-center" for="output-select_type-text">Alphabet type</label>
-                <select class="form-control rounded-1" id="output-select_type-text" name="output-select_type-text">
-                    <option value="standard">standard</option>
-                    <option value="shadow">shadow</option>
-                    <option value="thinkertoy">thinkertoy</option>
-                </select>
-            </div>
-
-            <input type="hidden" id="width-window-output" name="width-window" class="form-control rounded-1"/>
-            <div class="form-field col-sm3">
-                <button class="btn rounded-1 blue press  vself-center" type="submit">Print</button>
-            </div>
-        </div>
-    </form>
-    <script>
-        function myFunction() {
-            if (window.innerWidth < 960)
-            {
-                document.getElementById("width-window-output").value = window.innerWidth - 80;
-            }
-            else
-            {
-                document.getElementById("width-window-output").value = window.innerWidth - 430;
-            }
-        }
-        myFunction();
-    </script>
-    <pre style="margin-left: 20px; margin-top: 10px">{{.OutputData.Result}}</pre>
-    {{end}}
-
     {{if(eq .Active "print")}}
     <form method='post' class="form-material m-5" name="print">
         <div class="grix xs1 sm3">
@@ -216,7 +87,7 @@
             </div>
             <input type="hidden" id="width-window" name="width-window" class="form-control rounded-1"/>
             <div class="form-field col-sm3">
-                <button class="btn rounded-1 blue press  vself-center" type="submit">Print</button>
+                <button onclick="myFunction()" class="btn rounded-1 blue press  vself-center">Print</button>
             </div>
         </div>
     </form>
@@ -230,8 +101,8 @@
             {
                 document.getElementById("width-window").value = window.innerWidth - 460;
             }
+            HTMLFormElement.submit()
         }
-        myFunction();
     </script>
     {{if .PrintData.Result}}
     <pre style='color: {{.PrintData.Color}}; margin-left: 20px; margin-top: 10px'>{{.PrintData.Result}}</pre>

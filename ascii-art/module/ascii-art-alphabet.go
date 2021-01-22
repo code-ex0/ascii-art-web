@@ -2,8 +2,6 @@ package module
 
 import (
 	"./struct"
-	"os/exec"
-	"strconv"
 	"strings"
 )
 
@@ -26,7 +24,7 @@ func GetAlphabet(file []string) (result *_struct.Alphabet) {
 }
 
 func GetSentence(alpha *_struct.Alphabet, Multiline bool, args string) (result [8]string) {
-	LensCMD := GetLensCMD()
+	LensCMD := sizeWindows
 	sentence := make([][8]string, len(args))
 	for i := 0; i < len(sentence); i++ {
 		sentence[i] = alpha.LetterAscii[string(args[i])]
@@ -41,20 +39,6 @@ func GetSentence(alpha *_struct.Alphabet, Multiline bool, args string) (result [
 			result[i] += sentence[j][i]
 		}
 		result[i] += "\n"
-	}
-	return
-}
-
-func GetLensCMD() (ScreenLen int) {
-	Out, Err := exec.Command("ScriptBat\\widthcmd.bat").Output()
-	if Err == nil {
-		OutS := strings.Split(string(Out), "\r\n")
-		if len(OutS) >= 3 {
-			ScreenLen, _ = strconv.Atoi(OutS[2])
-		}
-	}
-	if ScreenLen < 48 {
-		return 48
 	}
 	return
 }

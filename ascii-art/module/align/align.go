@@ -1,12 +1,12 @@
 package align
 
-func Align(sentence string, align func() string, sizeCmd int) (result string) {
+func Align(sentence string, align string, sizeCmd int) (result string) {
 
-	switch align() {
+	switch align {
 	case "left":
 		result = left(sentence)
 	case "right":
-		right(sentence, sizeCmd)
+		result = right(sentence, sizeCmd)
 	case "center":
 		center(sentence, sizeCmd)
 	case "justify":

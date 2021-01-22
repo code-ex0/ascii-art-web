@@ -4,6 +4,6 @@ import (
 	"./module"
 )
 
-func Run_ascii_art(args []string) string {
-	return module.Start(args)
+func Run_ascii_art(args []string, windows int) string {
+	return module.Start(args, windows)
 }

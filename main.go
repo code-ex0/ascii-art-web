@@ -18,12 +18,12 @@ import (
 var reverse = new(_struct.DataReverse)
 var printO = new(_struct.DataPrint)
 var output = new(_struct.DataOutput)
+var sizeWindows int
 
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", Home)
 	r.HandleFunc("/upload-file-reverse", uploadFile)
-	r.HandleFunc("/reverse/{action}/{file}", getReverse)
 	r.HandleFunc("/reverse", Reverse)
 	r.HandleFunc("/output", Output)
 	r.HandleFunc("/print", PrintAscii)
@@ -36,11 +36,22 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func Reverse(w http.ResponseWriter, r *http.Request) {
-	tmpl := template.Must(template.ParseFiles("web/index.html"))
-	if reverse.FileName != "" {
-		reverse.Result = ascii_art.Run_ascii_art([]string{"--reverse=" + reverse.FileName})
-		reverse.Cat = ascii_art.Run_ascii_art([]string{reverse.Result, autoDetectType(reverse.FileName)})
-		fmt.Println(reverse)
+	tmpl := template.Must(template.ParseFiles("web/reverse.html"))
+	url := r.URL.Query()
+	if url.Get("a") != "" && url.Get("f") != "" {
+		if url.Get("a") == "use-file" {
+			sizeWindows, _ = strconv.Atoi(url.Get("w"))
+			reverse.FileName = url.Get("f")
+			reverse.Result = ascii_art.Run_ascii_art([]string{"--reverse=" + reverse.FileName}, sizeWindows/8)
+			reverse.Cat = ascii_art.Run_ascii_art([]string{reverse.Result, autoDetectType(reverse.FileName)}, sizeWindows/8)
+			fmt.Println(reverse)
+		} else if url.Get("a") == "delete" {
+			err := os.Remove("ascii-art/output/" + url.Get("f"))
+			if err != nil {
+				fmt.Println(err)
+			}
+		}
+
 	}
 	reverse.Files = getFile("ascii-art/output")
 	_ = tmpl.Execute(w, struct {
@@ -53,13 +64,15 @@ func Reverse(w http.ResponseWriter, r *http.Request) {
 }
 
 func Output(w http.ResponseWriter, r *http.Request) {
-	tmpl := template.Must(template.ParseFiles("web/index.html"))
+	tmpl := template.Must(template.ParseFiles("web/output.html"))
 	if r.FormValue("output-text") != "" && r.FormValue("output-file_name") != "" && r.FormValue("output-select_type-text") != "" {
 		output.Text = r.FormValue("output-text")
 		output.FileName = r.FormValue("output-file_name")
 		output.TypeText = r.FormValue("output-select_type-text")
-		ascii_art.Run_ascii_art([]string{output.Text, output.TypeText, "--output=" + output.FileName})
-		output.Result = ascii_art.Run_ascii_art([]string{output.Text, output.TypeText})
+
+		sizeWindows, _ = strconv.Atoi(r.FormValue("width-window"))
+		ascii_art.Run_ascii_art([]string{output.Text, output.TypeText, "--output=" + output.FileName}, sizeWindows/8)
+		output.Result = ascii_art.Run_ascii_art([]string{output.Text, output.TypeText}, sizeWindows/8)
 		fmt.Println(output)
 	}
 	_ = tmpl.Execute(w, struct {
@@ -70,17 +83,19 @@ func Output(w http.ResponseWriter, r *http.Request) {
 }
 
 func PrintAscii(w http.ResponseWriter, r *http.Request) {
-	tmpl := template.Must(template.ParseFiles("web/index.html"))
-	if (r.FormValue("print-text") != "" && r.FormValue("select_type-text") != "" && r.FormValue("yon") != "") && (r.FormValue("select-color") != "" ||
+	tmpl := template.Must(template.ParseFiles("web/print.html"))
+	if (r.FormValue("print-text") != "" && r.FormValue("select_type-text") != "" && r.FormValue("yon") != "" && r.FormValue("select-align") != "") && (r.FormValue("select-color") != "" ||
 		r.FormValue("advanced-color") != "") {
 		printO.Text = r.FormValue("print-text")
 		printO.TextType = r.FormValue("select_type-text")
 		printO.Color = r.FormValue("select-color")
 		printO.ColorType = r.FormValue("yon")
+		printO.Align = r.FormValue("select-align")
+		sizeWindows, _ = strconv.Atoi(r.FormValue("width-window"))
 		if printO.ColorType == "advanced" {
 			printO.Color = r.FormValue("advanced-color")
 		}
-		printO.Result = ascii_art.Run_ascii_art([]string{printO.Text, printO.TextType})
+		printO.Result = ascii_art.Run_ascii_art([]string{printO.Text, printO.TextType, "--align=" + printO.Align}, sizeWindows/8)
 		fmt.Println(printO)
 	}
 	_ = tmpl.Execute(w, struct {
@@ -88,7 +103,6 @@ func PrintAscii(w http.ResponseWriter, r *http.Request) {
 		PrintData *_struct.DataPrint
 	}{Active: "print", PrintData: printO})
 	printO.Result = ""
-
 }
 
 func getFile(directory string) []os.FileInfo {
@@ -117,6 +131,8 @@ func getReverse(w http.ResponseWriter, r *http.Request) {
 	} else if vars["action"] == "use-file" {
 		reverse.FileName = vars["file"]
 	}
+	sizeWindows, _ = strconv.Atoi(vars["width"])
+	fmt.Println(sizeWindows)
 	http.Redirect(w, r, "/reverse", http.StatusSeeOther)
 }
 

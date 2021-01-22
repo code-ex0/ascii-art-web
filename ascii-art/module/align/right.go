@@ -1,14 +1,14 @@
 package align
 
 import (
-	"fmt"
 	"strings"
 )
 
-func right(sentence string, sizeCmd int) {
+func right(sentence string, sizeCmd int) (result string) {
 	for _, l := range strings.Split(sentence, "\n") {
 		if l != "" {
-			fmt.Println(getSpace(sizeCmd-len(l)-1), l)
+			result += getSpace(sizeCmd-len(l)-1) + l + "\n"
 		}
 	}
+	return
 }

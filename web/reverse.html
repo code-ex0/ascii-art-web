@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Axentix Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/css/axentix.min.css">
+</head>
+
+<body class="layout with-sidenav">
+<header>
+    <nav class="navbar shadow-1 primary">
+        <p class="navbar-brand">Ascii-Art web</p>
+        <div class="navbar-menu ml-auto">
+            <button data-target="example-sidenav"
+                    class="btn rounded-1 press amaranth dark-1 sidenav-trigger hide-md-up">
+                Open sidenav
+            </button>
+        </div>
+    </nav>
+</header>
+<div id="example-sidenav" data-ax="sidenav" class="sidenav shadow-1 large fixed white">
+    <a href="/" class='sidenav-link {{if(eq .Active "home")}}active{{else}}{{end}}'>Home</a>
+    <a href="reverse" class='sidenav-link {{if(eq .Active "reverse")}}active{{else}}{{end}}'>Reverse</a>
+    <a href="output" class='sidenav-link {{if(eq .Active "output")}}active{{else}}{{end}}'>Output</a>
+    <a href="print" class='sidenav-link {{if(eq .Active "print")}}active{{else}}{{end}}'>Print</a>
+    <a href="#" class='sidenav-link'>Coming soon</a>
+</div>
+
+<main>
+
+    {{if(eq .Active "reverse")}}
+    {{ if not .ReverseData.Files}}
+    <div></div>
+    {{else}}
+
+    <div class="responsive-table">
+        <table class="table striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>File name</th>
+                <th>Reverse File</th>
+                <th>Delete File</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{ range $key, $value := .ReverseData.Files}}
+            <tr>
+                <td>{{$key}}</td>
+                <td>{{$value.Name}}</td>
+                <td><a id="use-reverse-{{$key}}" class="btn small green light-1 rounded-2 light-shadow-1 reverse"  onClick="myFunction('reverse?a=use-file&f={{$value.Name}}')">Use file {{$value.Name}}</a></td>
+                <td><a class="btn small modal-trigger pointer red light-1 rounded-2 light-shadow-1"
+                       data-target="modal-delete-file-{{$key}}">Delete file {{$value.Name}}</a></td>
+            </tr>
+            <div class="modal shadow-1 white rounded-3" id="modal-delete-file-{{$key}}" data-ax="modal">
+                <div class="modal-header">
+                    {{$value.Name}}
+                    <button data-target="modal-delete-file-{{$key}}" class="modal-trigger">
+                        <i class="fas fa-times"></i> <!-- Use font awesome -->
+                    </button>
+                </div>
+                <div class="modal-content">
+                    are you sure to delete {{$value.Name}}
+                    warning the delete is definitive
+                </div>
+                <div class="modal-footer">
+                    <a data-target="modal-delete-file-{{$key}}"
+                       class="ml-auto btn shadow-1 rounded-1 small primary modal-trigger">Close</a>
+                    <a data-target="modal-delete-file-{{$key}}" class="ml-auto btn shadow-1 rounded-1 small primary"
+                       href="reverse?a=delete&f={{$value.Name}}">confirm</a>
+                </div>
+            </div>
+            {{end}}
+            </tbody>
+        </table>
+    </div>
+        <script>
+            function myFunction(url) {
+                console.log(url);
+                let Window;
+                if (window.innerWidth < 960) {
+                    Window = window.innerWidth - 80;
+                } else {
+                    Window = window.innerWidth - 430;
+                }
+                window.location.href = url + "&w=" + Window;
+            }
+        </script>
+    {{end}}
+    <form method='post' enctype="multipart/form-data" action="upload-file-reverse" class="form-material m-5" name="reverse">
+        <div class="grix xs1 sm5">
+            <div class="form-file col-sm4">
+                <label for="multiplefiles" class="btn primary rounded-1 shadow-1">Select file</label>
+                <input name="multiplefiles" id="multiplefiles" type="file" multiple accept=".txt"/>
+                <div class="form-file-path"></div>
+            </div>
+            <div class="form-field col-sm1">
+                <button class="btn rounded-1 blue press vself-center" type="submit">Upload file</button>
+            </div>
+        </div>
+    </form>
+
+    {{if .ReverseData.Result}}
+    <p style="margin-left: 20px; margin-top: 10px">Result : {{ .ReverseData.Result }}</p>
+    <pre style="margin-left: 20px; margin-top: 10px">{{ .ReverseData.Cat }}</pre>
+    {{end}}
+    {{end}}
+
+
+</main>
+
+<footer class="footer primary">
+    Copyright © 2020 - louis sasse
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/js/axentix.min.js"></script>
+
+</body>
+</html>

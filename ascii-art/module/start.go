@@ -11,13 +11,14 @@ import (
 	"strings"
 )
 
-func Start(args []string) string {
+var sizeWindows int
+
+func Start(args []string, windows int) string {
+	sizeWindows = windows
 	if len(args) >= 1 {
 		param := getParam(args)
 		if v, found := param["align"]; found {
-			return align.Align(PrintSentence(GetSentence(GetAlphabet(fs.GetAlphabetFile(args)), true, args[0])), func() string {
-				return v
-			}, GetLensCMD())
+			return align.Align(PrintSentence(GetSentence(GetAlphabet(fs.GetAlphabetFile(args)), true, args[0])), v, sizeWindows)
 		} else if v, found := param["output"]; found {
 			if strings.HasSuffix(v, ".txt") {
 				output.Output(v, GetSentence(GetAlphabet(fs.GetAlphabetFile(args)), false, args[0]))
@@ -33,9 +34,7 @@ func Start(args []string) string {
 				return reverse.Reverse(strings.Split(string(temp), "\n"), GetAlphabet(autoDetectTypeFile(v)))
 			}
 		} else {
-			return align.Align(PrintSentence(GetSentence(GetAlphabet(fs.GetAlphabetFile(args)), true, args[0])), func() string {
-				return "left"
-			}, GetLensCMD())
+			return align.Align(PrintSentence(GetSentence(GetAlphabet(fs.GetAlphabetFile(args)), true, args[0])), "left", sizeWindows)
 		}
 	}
 	return ""
