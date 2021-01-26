@@ -8,11 +8,11 @@ func Align(sentence string, align string, sizeCmd int) (result string) {
 	case "right":
 		result = right(sentence, sizeCmd)
 	case "center":
-		center(sentence, sizeCmd)
+		result = center(sentence, sizeCmd)
 	case "justify":
-		justify(sentence, sizeCmd)
+		result = justify(sentence, sizeCmd)
 	default:
-		left(sentence)
+		result = left(sentence)
 	}
 	return
 }

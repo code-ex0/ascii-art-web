@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Axentix Layout</title>
+    <title>Ascii-Art -- Reverse</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/css/axentix.min.css">
+    <link rel="stylesheet" href="/load-assets/css/style.css">
 </head>
 
 <body class="layout with-sidenav">
@@ -21,10 +22,10 @@
     </nav>
 </header>
 <div id="example-sidenav" data-ax="sidenav" class="sidenav shadow-1 large fixed white">
-    <a href="/" class='sidenav-link {{if(eq .Active "home")}}active{{else}}{{end}}'>Home</a>
-    <a href="reverse" class='sidenav-link {{if(eq .Active "reverse")}}active{{else}}{{end}}'>Reverse</a>
-    <a href="output" class='sidenav-link {{if(eq .Active "output")}}active{{else}}{{end}}'>Output</a>
-    <a href="print" class='sidenav-link {{if(eq .Active "print")}}active{{else}}{{end}}'>Print</a>
+    <a href="{{.Url.Link.Home.UrlHome}}" class='sidenav-link {{if(eq .Active "home")}}active{{else}}{{end}}'>Home</a>
+    <a href="{{.Url.Link.Reverse.UrlReverse}}" class='sidenav-link {{if(eq .Active "reverse")}}active{{else}}{{end}}'>Reverse</a>
+    <a href="{{.Url.Link.Output.UrlOutput}}" class='sidenav-link {{if(eq .Active "output")}}active{{else}}{{end}}'>Output</a>
+    <a href="{{.Url.Link.Print.UrlPrint}}" class='sidenav-link {{if(eq .Active "print")}}active{{else}}{{end}}'>Print</a>
     <a href="#" class='sidenav-link'>Coming soon</a>
 </div>
 
@@ -43,6 +44,7 @@
                 <th>File name</th>
                 <th>Reverse File</th>
                 <th>Delete File</th>
+                <th>Downloads Files</th>
             </tr>
             </thead>
             <tbody>
@@ -50,9 +52,9 @@
             <tr>
                 <td>{{$key}}</td>
                 <td>{{$value.Name}}</td>
-                <td><a id="use-reverse-{{$key}}" class="btn small green light-1 rounded-2 light-shadow-1 reverse"  onClick="myFunction('reverse?a=use-file&f={{$value.Name}}')">Use file {{$value.Name}}</a></td>
-                <td><a class="btn small modal-trigger pointer red light-1 rounded-2 light-shadow-1"
-                       data-target="modal-delete-file-{{$key}}">Delete file {{$value.Name}}</a></td>
+                <td><a id="use-reverse-{{$key}}" class="btn small green light-3 rounded-2 light-shadow-1 reverse"  onClick="ReverseFunc('reverse?a=use-file&f={{$value.Name}}')">Use file {{$value.Name}}</a></td>
+                <td><a class="btn small modal-trigger pointer red light-3 rounded-2 light-shadow-1" data-target="modal-delete-file-{{$key}}">Delete file {{$value.Name}}</a></td>
+                <td><a class="btn small modal-trigger pointer blue light-3 rounded-2 light-shadow-1" href="/download/output/{{$value.Name}}" download="{{$value.Name}}">{{$value.Name}}</a></td>
             </tr>
             <div class="modal shadow-1 white rounded-3" id="modal-delete-file-{{$key}}" data-ax="modal">
                 <div class="modal-header">
@@ -77,19 +79,10 @@
         </table>
     </div>
         <script>
-            function myFunction(url) {
-                console.log(url);
-                let Window;
-                if (window.innerWidth < 960) {
-                    Window = window.innerWidth - 80;
-                } else {
-                    Window = window.innerWidth - 430;
-                }
-                window.location.href = url + "&w=" + Window;
-            }
+
         </script>
     {{end}}
-    <form method='post' enctype="multipart/form-data" action="upload-file-reverse" class="form-material m-5" name="reverse">
+    <form method='POST' enctype="multipart/form-data" action="upload-file-reverse" class="form-material m-5" name="reverse">
         <div class="grix xs1 sm5">
             <div class="form-file col-sm4">
                 <label for="multiplefiles" class="btn primary rounded-1 shadow-1">Select file</label>
@@ -103,8 +96,8 @@
     </form>
 
     {{if .ReverseData.Result}}
-    <p style="margin-left: 20px; margin-top: 10px">Result : {{ .ReverseData.Result }}</p>
-    <pre style="margin-left: 20px; margin-top: 10px">{{ .ReverseData.Cat }}</pre>
+    <p class="result">Result : {{ .ReverseData.Result }}</p>
+    <pre>{{ .ReverseData.Cat }}</pre>
     {{end}}
     {{end}}
 
@@ -112,9 +105,10 @@
 </main>
 
 <footer class="footer primary">
-    Copyright © 2020 - louis sasse
+    Copyright © 2021 - louis sasse
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/js/axentix.min.js"></script>
+<script src="/load-assets/js/app.js"></script>
 
 </body>
 </html>

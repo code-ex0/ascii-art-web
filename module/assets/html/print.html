@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Axentix Layout</title>
+    <title>Ascii-Art -- Print</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/css/axentix.min.css">
+    <link rel="stylesheet" href="/load-assets/css/style.css">
 </head>
 
 <body class="layout with-sidenav">
@@ -21,16 +22,16 @@
     </nav>
 </header>
 <div id="example-sidenav" data-ax="sidenav" class="sidenav shadow-1 large fixed white">
-    <a href="/" class='sidenav-link {{if(eq .Active "home")}}active{{else}}{{end}}'>Home</a>
-    <a href="reverse" class='sidenav-link {{if(eq .Active "reverse")}}active{{else}}{{end}}'>Reverse</a>
-    <a href="output" class='sidenav-link {{if(eq .Active "output")}}active{{else}}{{end}}'>Output</a>
-    <a href="print" class='sidenav-link {{if(eq .Active "print")}}active{{else}}{{end}}'>Print</a>
+    <a href="{{.Url.Link.Home.UrlHome}}" class='sidenav-link {{if(eq .Active "home")}}active{{else}}{{end}}'>Home</a>
+    <a href="{{.Url.Link.Reverse.UrlReverse}}" class='sidenav-link {{if(eq .Active "reverse")}}active{{else}}{{end}}'>Reverse</a>
+    <a href="{{.Url.Link.Output.UrlOutput}}" class='sidenav-link {{if(eq .Active "output")}}active{{else}}{{end}}'>Output</a>
+    <a href="{{.Url.Link.Print.UrlPrint}}" class='sidenav-link {{if(eq .Active "print")}}active{{else}}{{end}}'>Print</a>
     <a href="#" class='sidenav-link'>Coming soon</a>
 </div>
 
 <main>
     {{if(eq .Active "print")}}
-    <form method='post' class="form-material m-5" name="print">
+    <form method='POST' class="form-material m-5" name="print">
         <div class="grix xs1 sm3">
             <div class="form-field col-sm2">
                 <input type="text" name="print-text" id="print-text" placeholder="je suis un exemple" class="form-control rounded-1" value="{{.PrintData.Text}}"/>
@@ -87,33 +88,21 @@
             </div>
             <input type="hidden" id="width-window" name="width-window" class="form-control rounded-1"/>
             <div class="form-field col-sm3">
-                <button onclick="myFunction()" class="btn rounded-1 blue press  vself-center">Print</button>
+                <button onclick="PrintFunc()" class="btn rounded-1 blue press  vself-center">Print</button>
             </div>
         </div>
     </form>
-    <script>
-        function myFunction() {
-            if (window.innerWidth < 960)
-            {
-                document.getElementById("width-window").value = window.innerWidth - 120;
-            }
-            else
-            {
-                document.getElementById("width-window").value = window.innerWidth - 460;
-            }
-            HTMLFormElement.submit()
-        }
-    </script>
     {{if .PrintData.Result}}
-    <pre style='color: {{.PrintData.Color}}; margin-left: 20px; margin-top: 10px'>{{.PrintData.Result}}</pre>
+    <pre style='color: {{.PrintData.Color}}'>{{.PrintData.Result}}</pre>
     {{end}}
     {{end}}
 </main>
 
 <footer class="footer primary">
-    Copyright © 2020 - louis sasse
+    Copyright © 2021 - louis sasse
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/js/axentix.min.js"></script>
+<script src="/load-assets/js/app.js"></script>
 
 </body>
 </html>

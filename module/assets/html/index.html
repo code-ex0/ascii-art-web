@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ascii-Art -- Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/css/axentix.min.css">
+    <link rel="stylesheet" href="/load-assets/css/style.css">
+</head>
+
+<body class="layout with-sidenav">
+<header>
+    <nav class="navbar shadow-1 primary">
+        <p class="navbar-brand">Ascii-Art web</p>
+        <div class="navbar-menu ml-auto">
+            <button data-target="example-sidenav"
+                    class="btn rounded-1 press amaranth dark-1 sidenav-trigger hide-md-up">
+                Open sidenav
+            </button>
+        </div>
+    </nav>
+</header>
+<div id="example-sidenav" data-ax="sidenav" class="sidenav shadow-1 large fixed white">
+    <a href="{{.Url.Link.Home.UrlHome}}" class='sidenav-link {{if(eq .Active "home")}}active{{else}}{{end}}'>Home</a>
+    <a href="{{.Url.Link.Reverse.UrlReverse}}" class='sidenav-link {{if(eq .Active "reverse")}}active{{else}}{{end}}'>Reverse</a>
+    <a href="{{.Url.Link.Output.UrlOutput}}" class='sidenav-link {{if(eq .Active "output")}}active{{else}}{{end}}'>Output</a>
+    <a href="{{.Url.Link.Print.UrlPrint}}" class='sidenav-link {{if(eq .Active "print")}}active{{else}}{{end}}'>Print</a>
+    <a href="#" class='sidenav-link'>Coming soon</a>
+</div>
+
+<main>
+
+</main>
+
+<footer class="footer primary">
+    Copyright © 2021 - louis sasse
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/js/axentix.min.js"></script>
+
+</body>
+</html>

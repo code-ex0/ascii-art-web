@@ -1,0 +1,32 @@
+server:
+  host: "192.168.1.35"
+  port: 80
+  path:
+    pathServer: "C:\\Users\\louis\\IdeaProjects\\ascii-art-web\\"
+    pathOutputFile: "module/ascii-art/output/"
+  log:
+    path: "module/log/"
+    fileName: "log.log"
+
+link:
+  home:
+    urlHome: "/"
+    pathHomeHtml: "module/assets/html/index.html"
+  print:
+    urlPrint: "/print"
+    pathPrintHtml: "module/assets/html/print.html"
+  output:
+    urlOutput: "/output"
+    pathOutputHtml: "module/assets/html/output.html"
+  reverse:
+    urlReverse: "/reverse"
+    pathReverseHtml: "module/assets/html/reverse.html"
+  uploadsFiles:
+    urlUploadsFiles: "/upload-file-reverse"
+    pathUploadsFiles: "module/ascii-art/output"
+  downloadsFiles:
+    urlDownloadsFiles: "/download/output/"
+    pathDownloadsFiles: "module/ascii-art/output"
+  loadsAssets:
+    urlLoadsAssets: "/load-assets/"
+    pathLoadsAssets: "module/assets"

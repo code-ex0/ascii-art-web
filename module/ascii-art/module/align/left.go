@@ -13,5 +13,5 @@ func left(sentence string) (result string) {
 			result += "\n"
 		}
 	}
-	return result
+	return
 }

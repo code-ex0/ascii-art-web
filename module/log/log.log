@@ -1,0 +1,295 @@
+2021/01/26 11:23:28 GET		200		OK		/output		192.168.1.35:50934		0s
+2021/01/26 11:23:28 GET		404		Not Found		/favicon.ico		192.168.1.35:50934		0s
+2021/01/26 11:23:28 GET		200		OK		/output		192.168.1.35:50934		996.7µs
+2021/01/26 11:23:28 GET		404		Not Found		/favicon.ico		192.168.1.35:50934		0s
+2021/01/26 11:23:28 GET		200		OK		/output		192.168.1.35:50934		0s
+2021/01/26 11:23:28 GET		404		Not Found		/favicon.ico		192.168.1.35:50934		0s
+2021/01/26 11:23:28 GET		200		OK		/output		192.168.1.35:50934		998.2µs
+2021/01/26 11:23:28 GET		404		Not Found		/favicon.ico		192.168.1.35:50934		0s
+2021/01/26 11:24:46 GET		200		OK		/output		192.168.1.35:50943		0s
+2021/01/26 11:24:46 GET		404		Not Found		/favicon.ico		192.168.1.35:50943		0s
+2021/01/26 11:24:47 GET		200		OK		/output		192.168.1.35:50943		0s
+2021/01/26 11:24:47 GET		404		Not Found		/favicon.ico		192.168.1.35:50943		0s
+2021/01/26 11:24:47 GET		200		OK		/output		192.168.1.35:50943		0s
+2021/01/26 11:24:47 GET		404		Not Found		/favicon.ico		192.168.1.35:50943		1.0001ms
+2021/01/26 11:24:47 GET		200		OK		/output		192.168.1.35:50943		998.1µs
+2021/01/26 11:24:47 GET		404		Not Found		/favicon.ico		192.168.1.35:50943		0s
+2021/01/26 11:29:23 GET		200		OK		/output		192.168.1.35:50980		998.3µs
+2021/01/26 11:29:23 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:23 GET		200		OK		/output		192.168.1.35:50980		0s
+2021/01/26 11:29:23 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:32 GET		200		OK		/reverse		192.168.1.35:50980		997.5µs
+2021/01/26 11:29:32 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:33 GET		200		OK		/		192.168.1.35:50980		0s
+2021/01/26 11:29:33 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:33 GET		200		OK		/reverse		192.168.1.35:50980		995.9µs
+2021/01/26 11:29:33 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:34 GET		200		OK		/reverse?a=use-file&f=ah.txt&w=1490		192.168.1.35:50980		1.9956ms
+2021/01/26 11:29:34 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:36 GET		200		OK		/reverse?a=use-file&f=setsetset.txt&w=1490		192.168.1.35:50980		997.9µs
+2021/01/26 11:29:36 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:36 GET		200		OK		/reverse?a=use-file&f=test_2.txt&w=1490		192.168.1.35:50980		1.9946ms
+2021/01/26 11:29:36 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:37 GET		200		OK		/reverse?a=use-file&f=test_3.txt&w=1490		192.168.1.35:50980		997.9µs
+2021/01/26 11:29:37 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:37 GET		200		OK		/reverse?a=use-file&f=toto.txt&w=1490		192.168.1.35:50980		1.9947ms
+2021/01/26 11:29:37 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:38 GET		200		OK		/output		192.168.1.35:50980		0s
+2021/01/26 11:29:38 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:38 GET		200		OK		/print		192.168.1.35:50980		2.1671ms
+2021/01/26 11:29:38 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:48 GET		200		OK		/output		192.168.1.35:50980		0s
+2021/01/26 11:29:48 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:29:48 GET		200		OK		/reverse		192.168.1.35:50980		997.7µs
+2021/01/26 11:29:48 GET		404		Not Found		/favicon.ico		192.168.1.35:50980		0s
+2021/01/26 11:36:43 GET		200		OK		/		192.168.1.35:51041		0s
+2021/01/26 11:36:43 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:36:45 GET		200		OK		/		192.168.1.35:51041		996.9µs
+2021/01/26 11:36:45 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:36:46 GET		200		OK		/		192.168.1.35:51041		0s
+2021/01/26 11:36:46 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		992.1µs
+2021/01/26 11:36:46 GET		200		OK		/		192.168.1.35:51041		0s
+2021/01/26 11:36:46 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:36:57 GET		200		OK		/		192.168.1.35:51041		0s
+2021/01/26 11:36:57 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:36:58 GET		200		OK		/reverse		192.168.1.35:51041		1.0004ms
+2021/01/26 11:36:58 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:36:58 GET		200		OK		/output		192.168.1.35:51041		9.9688ms
+2021/01/26 11:36:58 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:37:00 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:37:01 GET		200		OK		/print		192.168.1.35:51041		996.6µs
+2021/01/26 11:37:01 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:37:02 GET		200		OK		/output		192.168.1.35:51041		0s
+2021/01/26 11:37:02 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:37:03 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:37:04 GET		200		OK		/reverse		192.168.1.35:51041		995.8µs
+2021/01/26 11:37:04 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:37:05 GET		200		OK		/		192.168.1.35:51041		0s
+2021/01/26 11:37:05 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:37:06 GET		200		OK		/output		192.168.1.35:51041		0s
+2021/01/26 11:37:06 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:37:12 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:37:29 GET		200		OK		/output		192.168.1.35:51041		997.3µs
+2021/01/26 11:37:29 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:38:07 GET		200		OK		/output		192.168.1.35:51041		4.9859ms
+2021/01/26 11:38:07 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:38:23 GET		200		OK		/output		192.168.1.35:51041		5.984ms
+2021/01/26 11:38:23 GET		404		Not Found		/favicon.ico		192.168.1.35:51041		0s
+2021/01/26 11:38:43 GET		200		OK		/output		192.168.1.35:51072		996.8µs
+2021/01/26 11:38:43 GET		404		Not Found		/favicon.ico		192.168.1.35:51072		0s
+2021/01/26 11:39:22 GET		200		OK		/output		192.168.1.35:51072		5.4029ms
+2021/01/26 11:39:22 GET		404		Not Found		/favicon.ico		192.168.1.35:51072		0s
+2021/01/26 11:39:34 GET		200		OK		/output		192.168.1.35:51072		5.9845ms
+2021/01/26 11:39:34 GET		404		Not Found		/favicon.ico		192.168.1.35:51072		0s
+2021/01/26 11:40:00 GET		200		OK		/output		192.168.1.35:51072		4.9867ms
+2021/01/26 11:40:00 GET		404		Not Found		/favicon.ico		192.168.1.35:51072		0s
+2021/01/26 11:40:08 GET		200		OK		/output		192.168.1.35:51072		5.9838ms
+2021/01/26 11:40:09 GET		404		Not Found		/favicon.ico		192.168.1.35:51072		0s
+2021/01/26 11:40:09 GET		200		OK		/		192.168.1.35:51072		0s
+2021/01/26 11:40:09 GET		404		Not Found		/favicon.ico		192.168.1.35:51072		0s
+2021/01/26 11:40:11 GET		200		OK		/output		192.168.1.35:51072		0s
+2021/01/26 11:40:11 GET		404		Not Found		/favicon.ico		192.168.1.35:51072		0s
+2021/01/26 11:40:23 GET		200		OK		/output		192.168.1.35:51085		998µs
+2021/01/26 11:40:23 GET		404		Not Found		/favicon.ico		192.168.1.35:51085		0s
+2021/01/26 11:40:24 GET		404		Not Found		/Home		192.168.1.35:51085		0s
+2021/01/26 11:40:24 GET		404		Not Found		/favicon.ico		192.168.1.35:51085		0s
+2021/01/26 11:40:25 GET		404		Not Found		/favicon.ico		192.168.1.35:51085		0s
+2021/01/26 11:40:30 GET		200		OK		/output		192.168.1.35:51087		994.8µs
+2021/01/26 11:40:30 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:40:31 GET		200		OK		/		192.168.1.35:51087		0s
+2021/01/26 11:40:31 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:40:32 GET		200		OK		/output		192.168.1.35:51087		997µs
+2021/01/26 11:40:32 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:41:12 GET		200		OK		/output		192.168.1.35:51087		5.9854ms
+2021/01/26 11:41:12 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:41:13 GET		200		OK		/print		192.168.1.35:51087		0s
+2021/01/26 11:41:13 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:41:14 GET		200		OK		/output		192.168.1.35:51087		0s
+2021/01/26 11:41:14 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:41:14 GET		200		OK		/reverse		192.168.1.35:51087		997.4µs
+2021/01/26 11:41:14 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:41:15 GET		200		OK		/output		192.168.1.35:51087		0s
+2021/01/26 11:41:15 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:41:16 GET		200		OK		/		192.168.1.35:51087		996.1µs
+2021/01/26 11:41:16 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:41:17 GET		200		OK		/output		192.168.1.35:51087		0s
+2021/01/26 11:41:17 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:41:17 GET		200		OK		/output		192.168.1.35:51087		0s
+2021/01/26 11:41:17 GET		404		Not Found		/favicon.ico		192.168.1.35:51087		0s
+2021/01/26 11:43:02 GET		200		OK		/output		192.168.1.35:51106		997.5µs
+2021/01/26 11:43:03 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:43:03 GET		200		OK		/reverse		192.168.1.35:51106		5.9832ms
+2021/01/26 11:43:03 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:43:04 GET		200		OK		/output		192.168.1.35:51106		0s
+2021/01/26 11:43:04 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:43:05 GET		200		OK		/print		192.168.1.35:51106		4.9861ms
+2021/01/26 11:43:05 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:43:05 GET		200		OK		/reverse		192.168.1.35:51106		1.1137ms
+2021/01/26 11:43:05 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:43:06 GET		200		OK		/		192.168.1.35:51106		0s
+2021/01/26 11:43:06 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:43:06 GET		200		OK		/reverse		192.168.1.35:51106		998.3µs
+2021/01/26 11:43:06 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:43:06 GET		200		OK		/output		192.168.1.35:51106		1.0551ms
+2021/01/26 11:43:07 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:43:07 GET		200		OK		/output		192.168.1.35:51106		0s
+2021/01/26 11:43:07 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:43:07 GET		200		OK		/print		192.168.1.35:51106		997.6µs
+2021/01/26 11:43:07 GET		404		Not Found		/favicon.ico		192.168.1.35:51106		0s
+2021/01/26 11:44:25 GET		200		OK		/		192.168.1.35:51118		997.1µs
+2021/01/26 11:44:25 GET		404		Not Found		/favicon.ico		192.168.1.35:51118		1.0085ms
+2021/01/26 11:44:26 GET		200		OK		/reverse		192.168.1.35:51118		1.9956ms
+2021/01/26 11:44:26 GET		404		Not Found		/favicon.ico		192.168.1.35:51118		0s
+2021/01/26 11:44:26 GET		200		OK		/output		192.168.1.35:51118		994.7µs
+2021/01/26 11:44:26 GET		404		Not Found		/favicon.ico		192.168.1.35:51118		0s
+2021/01/26 11:44:27 GET		200		OK		/		192.168.1.35:51118		0s
+2021/01/26 11:44:27 GET		404		Not Found		/favicon.ico		192.168.1.35:51118		0s
+2021/01/26 11:46:07 GET		200		OK		/reverse		192.168.1.35:51127		996.5µs
+2021/01/26 11:46:07 GET		404		Not Found		/favicon.ico		192.168.1.35:51127		0s
+2021/01/26 11:46:08 GET		200		OK		/download/output/ah.txt		192.168.1.35:51127		24.9313ms
+2021/01/26 11:46:18 GET		200		OK		/reverse?a=use-file&f=ah.txt&w=1490		192.168.1.35:51127		998.3µs
+2021/01/26 11:46:18 GET		404		Not Found		/favicon.ico		192.168.1.35:51127		0s
+2021/01/26 11:46:19 GET		200		OK		/reverse?a=use-file&f=setsetset.txt&w=1490		192.168.1.35:51127		985.8µs
+2021/01/26 11:46:19 GET		404		Not Found		/favicon.ico		192.168.1.35:51127		0s
+2021/01/26 11:46:19 GET		200		OK		/output		192.168.1.35:51127		985.5µs
+2021/01/26 11:46:19 GET		404		Not Found		/favicon.ico		192.168.1.35:51127		0s
+2021/01/26 11:46:20 GET		200		OK		/print		192.168.1.35:51127		997.6µs
+2021/01/26 11:46:20 GET		404		Not Found		/favicon.ico		192.168.1.35:51127		997.2µs
+2021/01/26 11:50:17 GET		200		OK		/print		192.168.1.35:51160		1.9925ms
+2021/01/26 11:50:17 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:18 GET		200		OK		/		192.168.1.35:51160		4.9851ms
+2021/01/26 11:50:18 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:20 GET		200		OK		/reverse		192.168.1.35:51160		1.0124ms
+2021/01/26 11:50:20 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:21 GET		200		OK		/output		192.168.1.35:51160		996.8µs
+2021/01/26 11:50:21 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:22 GET		200		OK		/print		192.168.1.35:51160		997µs
+2021/01/26 11:50:22 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:24 GET		200		OK		/reverse		192.168.1.35:51160		995.9µs
+2021/01/26 11:50:24 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:25 GET		200		OK		/download/output/ah.txt		192.168.1.35:51160		24.9339ms
+2021/01/26 11:50:28 GET		200		OK		/reverse?a=use-file&f=ah.txt&w=1490		192.168.1.35:51160		996.9µs
+2021/01/26 11:50:28 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:30 remove C:\Users\louis\IdeaProjects\ascii-art-web\module/ascii-art/outputah.txt: The system cannot find the file specified.
+2021/01/26 11:50:30 GET		200		OK		/reverse?a=delete&f=ah.txt		192.168.1.35:51160		996.8µs
+2021/01/26 11:50:30 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:32 remove C:\Users\louis\IdeaProjects\ascii-art-web\module/ascii-art/outputah.txt: The system cannot find the file specified.
+2021/01/26 11:50:32 GET		200		OK		/reverse?a=delete&f=ah.txt		192.168.1.35:51160		996.6µs
+2021/01/26 11:50:32 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:35 remove C:\Users\louis\IdeaProjects\ascii-art-web\module/ascii-art/outputsetsetset.txt: The system cannot find the file specified.
+2021/01/26 11:50:35 GET		200		OK		/reverse?a=delete&f=setsetset.txt		192.168.1.35:51160		1.9937ms
+2021/01/26 11:50:35 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:50:37 remove C:\Users\louis\IdeaProjects\ascii-art-web\module/ascii-art/outputtest_2.txt: The system cannot find the file specified.
+2021/01/26 11:50:37 GET		200		OK		/reverse?a=delete&f=test_2.txt		192.168.1.35:51160		997.3µs
+2021/01/26 11:50:37 GET		404		Not Found		/favicon.ico		192.168.1.35:51160		0s
+2021/01/26 11:53:02 GET		200		OK		/reverse?a=delete&f=test_2.txt		192.168.1.35:51178		1.9947ms
+2021/01/26 11:53:02 GET		404		Not Found		/favicon.ico		192.168.1.35:51178		0s
+2021/01/26 11:53:02 remove C:\Users\louis\IdeaProjects\ascii-art-web\module/ascii-art/output/test_2.txt: The system cannot find the file specified.
+2021/01/26 11:53:02 GET		200		OK		/reverse?a=delete&f=test_2.txt		192.168.1.35:51178		996.4µs
+2021/01/26 11:53:02 GET		404		Not Found		/favicon.ico		192.168.1.35:51178		0s
+2021/01/26 11:53:04 GET		200		OK		/reverse?a=delete&f=ah.txt		192.168.1.35:51178		995.7µs
+2021/01/26 11:53:04 GET		404		Not Found		/favicon.ico		192.168.1.35:51178		0s
+2021/01/26 11:53:06 GET		200		OK		/reverse?a=delete&f=setsetset.txt		192.168.1.35:51178		996.1µs
+2021/01/26 11:53:06 GET		404		Not Found		/favicon.ico		192.168.1.35:51178		0s
+2021/01/26 11:53:07 GET		200		OK		/reverse?a=delete&f=test_3.txt		192.168.1.35:51178		995.3µs
+2021/01/26 11:53:07 GET		404		Not Found		/favicon.ico		192.168.1.35:51178		0s
+2021/01/26 11:53:15 GET		200		OK		/reverse?a=delete&f=toto.txt		192.168.1.35:51178		997.7µs
+2021/01/26 11:53:15 GET		404		Not Found		/favicon.ico		192.168.1.35:51178		0s
+2021/01/26 11:53:26 POST		303		See Other		/upload-file-reverse		192.168.1.35:51178		13.9623ms
+2021/01/26 11:53:26 GET		404		Not Found		/favicon.ico		192.168.1.35:51178		0s
+2021/01/26 11:53:29 GET		200		OK		/		192.168.1.35:51178		0s
+2021/01/26 11:53:29 GET		404		Not Found		/favicon.ico		192.168.1.35:51178		0s
+2021/01/26 11:53:31 GET		200		OK		/reverse		192.168.1.35:51178		998µs
+2021/01/26 11:53:31 GET		404		Not Found		/favicon.ico		192.168.1.35:51178		0s
+2021/01/26 11:55:24 POST		303		See Other		/upload-file-reverse		192.168.1.35:51191		26.4451311s
+2021/01/26 11:55:24 GET		404		Not Found		/favicon.ico		192.168.1.35:51191		0s
+2021/01/26 11:58:25 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:26 GET		200		OK		/reverse		192.168.1.35:51220		996.9µs
+2021/01/26 11:58:26 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:29 POST		200		OK		/upload-file-reverse		192.168.1.35:51220		1.9939ms
+2021/01/26 11:58:29 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:31 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:35 GET		200		OK		/reverse?a=delete&f=test_1.txt		192.168.1.35:51220		1.9961ms
+2021/01/26 11:58:35 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:38 POST		200		OK		/upload-file-reverse		192.168.1.35:51220		997µs
+2021/01/26 11:58:38 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:40 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:40 GET		200		OK		/reverse?a=delete&f=test_1.txt		192.168.1.35:51220		998.1µs
+2021/01/26 11:58:41 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:42 remove C:\Users\louis\IdeaProjects\ascii-art-web\module/ascii-art/output/test_1.txt: The system cannot find the file specified.
+2021/01/26 11:58:42 GET		200		OK		/reverse?a=delete&f=test_1.txt		192.168.1.35:51220		0s
+2021/01/26 11:58:42 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:42 remove C:\Users\louis\IdeaProjects\ascii-art-web\module/ascii-art/output/test_1.txt: The system cannot find the file specified.
+2021/01/26 11:58:42 GET		200		OK		/reverse?a=delete&f=test_1.txt		192.168.1.35:51220		997.8µs
+2021/01/26 11:58:42 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:42 remove C:\Users\louis\IdeaProjects\ascii-art-web\module/ascii-art/output/test_1.txt: The system cannot find the file specified.
+2021/01/26 11:58:42 GET		200		OK		/reverse?a=delete&f=test_1.txt		192.168.1.35:51220		998.4µs
+2021/01/26 11:58:42 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:45 POST		200		OK		/upload-file-reverse		192.168.1.35:51220		996µs
+2021/01/26 11:58:45 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:49 GET		200		OK		/		192.168.1.35:51220		0s
+2021/01/26 11:58:49 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:58:50 GET		200		OK		/reverse		192.168.1.35:51220		996.2µs
+2021/01/26 11:58:50 GET		404		Not Found		/favicon.ico		192.168.1.35:51220		0s
+2021/01/26 11:59:13 GET		200		OK		/reverse		192.168.1.35:51228		996.3µs
+2021/01/26 11:59:13 GET		404		Not Found		/favicon.ico		192.168.1.35:51228		0s
+2021/01/26 11:59:13 GET		200		OK		/reverse		192.168.1.35:51228		0s
+2021/01/26 11:59:13 GET		404		Not Found		/favicon.ico		192.168.1.35:51228		0s
+2021/01/26 11:59:13 GET		200		OK		/reverse		192.168.1.35:51228		997.1µs
+2021/01/26 11:59:13 GET		404		Not Found		/favicon.ico		192.168.1.35:51228		0s
+2021/01/26 11:59:17 POST		200		OK		/upload-file-reverse		192.168.1.35:51228		998.7µs
+2021/01/26 11:59:17 GET		404		Not Found		/favicon.ico		192.168.1.35:51228		0s
+2021/01/26 12:00:49 POST		200		OK		/upload-file-reverse		192.168.1.35:51245		996.3µs
+2021/01/26 12:00:49 GET		404		Not Found		/favicon.ico		192.168.1.35:51245		0s
+2021/01/26 12:00:51 POST		200		OK		/upload-file-reverse		192.168.1.35:51245		0s
+2021/01/26 12:00:51 GET		404		Not Found		/favicon.ico		192.168.1.35:51245		0s
+2021/01/26 12:02:18 GET		200		OK		/		192.168.1.35:51283		995.9µs
+2021/01/26 12:02:18 GET		200		OK		/load-assets/css/style.css		192.168.1.35:51283		29.9197ms
+2021/01/26 12:02:18 GET		404		Not Found		/favicon.ico		192.168.1.35:51283		0s
+2021/01/26 12:02:19 GET		200		OK		/reverse		192.168.1.35:51283		997.5µs
+2021/01/26 12:02:19 GET		200		OK		/load-assets/js/app.js		192.168.1.35:51283		0s
+2021/01/26 12:02:19 GET		404		Not Found		/favicon.ico		192.168.1.35:51283		0s
+2021/01/26 12:02:24 POST		200		OK		/upload-file-reverse		192.168.1.35:51283		2.992ms
+2021/01/26 12:02:24 GET		404		Not Found		/favicon.ico		192.168.1.35:51283		0s
+2021/01/26 12:04:07 POST		200		OK		/upload-file-reverse		192.168.1.35:51311		997.9µs
+2021/01/26 12:04:07 GET		404		Not Found		/favicon.ico		192.168.1.35:51311		0s
+2021/01/26 12:04:26 POST		200		OK		/upload-file-reverse		192.168.1.35:51314		2.9918ms
+2021/01/26 12:04:26 GET		404		Not Found		/favicon.ico		192.168.1.35:51314		0s
+2021/01/26 12:04:33 POST		200		OK		/upload-file-reverse		192.168.1.35:51314		998.3µs
+2021/01/26 12:04:33 GET		404		Not Found		/favicon.ico		192.168.1.35:51314		0s
+2021/01/26 12:04:56 POST		200		OK		/upload-file-reverse		192.168.1.35:51321		996.5µs
+2021/01/26 12:04:57 GET		404		Not Found		/favicon.ico		192.168.1.35:51321		0s
+2021/01/26 12:09:14 POST		200		OK		/upload-file-reverse		192.168.1.35:51351		996.6µs
+2021/01/26 12:09:14 GET		404		Not Found		/favicon.ico		192.168.1.35:51351		0s
+2021/01/26 12:18:50 POST		200		OK		/upload-file-reverse		192.168.1.35:51435		995.8µs
+2021/01/26 12:18:50 GET		404		Not Found		/favicon.ico		192.168.1.35:51435		0s
+2021/01/26 12:18:53 GET		404		Not Found		/favicon.ico		192.168.1.35:51435		0s
+2021/01/26 12:18:54 GET		200		OK		/output		192.168.1.35:51435		0s
+2021/01/26 12:18:54 GET		404		Not Found		/favicon.ico		192.168.1.35:51435		0s
+2021/01/26 12:18:54 GET		200		OK		/reverse		192.168.1.35:51435		996.4µs
+2021/01/26 12:18:54 GET		404		Not Found		/favicon.ico		192.168.1.35:51435		0s
+2021/01/26 12:18:56 GET		200		OK		/reverse?a=use-file&f=test_1.txt&w=1490		192.168.1.35:51435		997.6µs
+2021/01/26 12:18:56 GET		404		Not Found		/favicon.ico		192.168.1.35:51435		0s
+2021/01/26 12:18:57 GET		200		OK		/download/output/test_1.txt		192.168.1.35:51435		23.9363ms
+2021/01/26 12:19:19 GET		200		OK		/output		192.168.1.35:51439		997.2µs
+2021/01/26 12:19:19 GET		404		Not Found		/favicon.ico		192.168.1.35:51439		0s
+2021/01/26 12:19:20 GET		200		OK		/reverse		192.168.1.35:51439		998µs
+2021/01/26 12:19:20 GET		404		Not Found		/favicon.ico		192.168.1.35:51439		0s
+2021/01/26 12:19:24 POST		200		OK		/upload-file-reverse		192.168.1.35:51439		998µs
+2021/01/26 12:19:24 GET		404		Not Found		/favicon.ico		192.168.1.35:51439		0s
+2021/01/26 12:19:25 GET		404		Not Found		/favicon.ico		192.168.1.35:51439		0s
+2021/01/26 12:22:32 GET		200		OK		/output		192.168.1.35:51439		997.7µs
+2021/01/26 12:22:32 GET		404		Not Found		/favicon.ico		192.168.1.35:51439		0s
+2021/01/26 12:22:33 GET		200		OK		/print		192.168.1.35:51439		997.3µs
+2021/01/26 12:22:33 GET		404		Not Found		/favicon.ico		192.168.1.35:51439		997.5µs
+2021/01/26 12:24:34 GET		200		OK		/reverse		192.168.1.35:51439		997.8µs
+2021/01/26 12:24:34 GET		404		Not Found		/favicon.ico		192.168.1.35:51439		0s
+2021/01/26 12:24:36 GET		200		OK		/download/output/test_1.txt		192.168.1.35:51439		24.9335ms
+2021/01/26 12:24:39 POST		200		OK		/upload-file-reverse		192.168.1.35:51439		2.9935ms
+2021/01/26 12:24:39 GET		404		Not Found		/favicon.ico		192.168.1.35:51439		0s
+2021/01/26 12:25:35 GET		404		Not Found		/favicon.ico		192.168.1.35:51509		0s
+2021/01/26 12:25:35 GET		200		OK		/reverse		192.168.1.35:51509		1.9954ms
+2021/01/26 12:25:35 GET		404		Not Found		/favicon.ico		192.168.1.35:51509		0s
+2021/01/26 12:25:39 POST		200		OK		/upload-file-reverse		192.168.1.35:51509		1.9944ms
+2021/01/26 12:25:39 GET		404		Not Found		/favicon.ico		192.168.1.35:51509		0s
+2021/01/26 12:29:21 GET		200		OK		/reverse		192.168.1.35:51535		1.9951ms

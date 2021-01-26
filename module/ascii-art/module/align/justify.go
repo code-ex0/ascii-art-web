@@ -1,11 +1,10 @@
 package align
 
 import (
-	"fmt"
 	"strings"
 )
 
-func justify(sentence string, sizeCmd int) {
+func justify(sentence string, sizeCmd int) (result string) {
 	line := strings.Split(sentence, "\n")
 	for i := 0; i < len(line)/8; i++ {
 		if line[i] != "" {
@@ -19,17 +18,18 @@ func justify(sentence string, sizeCmd int) {
 					for j, k := range strings.Split(l, "\t") {
 						if k != "" {
 							if j != 0 {
-								fmt.Print(getSpace(space[z]))
+								result += getSpace(space[z])
 								z++
 							}
-							fmt.Print(k)
+							result += k
 						}
 					}
-					fmt.Println()
+					result += "\n"
 				}
 			}
 		}
 	}
+	return
 }
 
 func spaceDetection(board []string) []string {
