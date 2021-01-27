@@ -1,0 +1,38 @@
+# **Ascii-art-wab**
+
+edit file config.yml to make the settings of the server.
+````server:
+  host: "localhost"
+  port: 80
+  path:
+    pathServer: "C:/Users/louis/IdeaProjects/ascii-art-web/"
+    pathOutputFile: "Controller/ascii-art/output/"
+  log:
+    path: "Controller/log/"
+    fileName: "log.log"
+
+link:
+  home:
+    urlHome: "/"
+    pathHomeHtml: "Controller/assets/html/index.html"
+  print:
+    urlPrint: "/print"
+    pathPrintHtml: "Controller/assets/html/print.html"
+  output:
+    urlOutput: "/output"
+    pathOutputHtml: "Controller/assets/html/output.html"
+  reverse:
+    urlReverse: "/reverse"
+    pathReverseHtml: "Controller/assets/html/reverse.html"
+  downloadsFiles:
+    urlDownloadsFiles: "/download/output/"
+    pathDownloadsFiles: "Controller/ascii-art/output"
+  loadsAssets:
+    urlLoadsAssets: "/load-assets/"
+    pathLoadsAssets: "./Controller/assets"
+````
+
+for run the server execute this command ````go run main.go```` in the folder 
+````ascii-art-web````
+
+
