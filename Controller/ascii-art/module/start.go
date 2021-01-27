@@ -25,7 +25,7 @@ func Start(args []string, windows int) string {
 			}
 		} else if v, found := param["reverse"]; found {
 			if strings.HasSuffix(v, ".txt") {
-				f, err := os.Open("module/ascii-art/output/" + v)
+				f, err := os.Open("Controller/ascii-art/output/" + v)
 				if err != nil {
 					log.Fatal(err)
 				}
@@ -57,7 +57,7 @@ func getParam(args []string) map[string]string {
 }
 
 func autoDetectTypeFile(file string) []string {
-	temp, _ := os.Open("module/ascii-art/output/" + file)
+	temp, _ := os.Open("Controller/ascii-art/output/" + file)
 	standard := false
 	shadow := false
 	thinkertoy := false
@@ -86,7 +86,7 @@ func autoDetectTypeFile(file string) []string {
 		typefile = "thinkertoy.txt"
 	}
 
-	a, _ := os.Open("module/ascii-art/file/" + typefile)
+	a, _ := os.Open("Controller/ascii-art/file/" + typefile)
 	b, _ := ioutil.ReadAll(a)
 	a.Close()
 	return strings.Split(string(b), "\r\n")

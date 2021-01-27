@@ -12,7 +12,7 @@ function ReverseFunc(url) {
     if (window.innerWidth < 960) {
         Window = window.innerWidth - 80;
     } else {
-        Window = window.innerWidth - 430;
+        Window = window.innerWidth - 410;
     }
     window.location.href = url + "&w=" + Window;
 }

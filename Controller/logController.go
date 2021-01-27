@@ -1,4 +1,4 @@
-package module
+package Controller
 
 import (
 	"fmt"
@@ -24,8 +24,7 @@ func RequestLogger(targetMux http.Handler) http.Handler {
 			http.StatusText(lrw.statusCode),
 			r.RequestURI,
 			r.RemoteAddr,
-			time.Since(start),
-		)
+			time.Since(start))
 		log.Printf(logs)
 		fmt.Println(logs)
 	})

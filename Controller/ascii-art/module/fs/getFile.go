@@ -18,7 +18,7 @@ func GetAlphabetFile(args []string) (result []string) {
 			file = "thinkertoy.txt"
 		}
 	}
-	temp, _ := os.Open("module/ascii-art/file/" + file)
+	temp, _ := os.Open("Controller/ascii-art/file/" + file)
 	temps, _ := ioutil.ReadAll(temp)
 	temp.Close()
 	return strings.Split(string(temps), "\r\n")

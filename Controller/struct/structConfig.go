@@ -1,7 +1,6 @@
 package _struct
 
 import (
-	"fmt"
 	"gopkg.in/yaml.v2"
 	"os"
 )
@@ -36,10 +35,6 @@ type Config struct {
 			UrlReverse      string `yaml:"urlReverse"`
 			PathReverseHtml string `yaml:"pathReverseHtml"`
 		} `yaml:"reverse"`
-		UploadsFiles struct {
-			UrlUploadsFiles  string `yaml:"urlUploadsFiles"`
-			PathUploadsFiles string `yaml:"pathUploadsFiles"`
-		} `yaml:"uploadsFiles"`
 		DownloadsFiles struct {
 			UrlDownloadsFiles  string `yaml:"urlDownloadsFiles"`
 			PathDownloadsFiles string `yaml:"pathDownloadsFiles"`
@@ -51,26 +46,15 @@ type Config struct {
 	} `yaml:"link"`
 }
 
-func newConfig(config *Config) (*Config, error) {
-
+func (config *Config) NewConfig() (*Config, error) {
 	file, err := os.Open("config.yml")
 	if err != nil {
 		return nil, err
 	}
 	defer file.Close()
-
 	d := yaml.NewDecoder(file)
-
 	if err := d.Decode(&config); err != nil {
 		return nil, err
 	}
 	return config, nil
-}
-
-func (config *Config) GetConfig() *Config {
-	conf, err := newConfig(config)
-	if err != nil {
-		fmt.Println(err)
-	}
-	return conf
 }

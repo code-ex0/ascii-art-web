@@ -1,7 +1,7 @@
 package main
 
-import "./module"
+import "./Controller"
 
 func main() {
-	module.Server()
+	Controller.Server()
 }
