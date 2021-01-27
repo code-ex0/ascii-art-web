@@ -1,5 +1,5 @@
 # **Ascii-art-wab**
-edit file config.yml to make the settings of the server.
+before run the server edit file config.yml to make the settings of the server for adapt the server on your machine.
 ````
 server:
   host: "localhost"
@@ -31,11 +31,13 @@ link:
     urlLoadsAssets: "/load-assets/"
     pathLoadsAssets: "./Controller/assets"
 ````
+````pathServer```` is not necessary but if don't want use replace ````pathServer: "folder of the server"```` by ````pathServer: ""````
 for run the server execute this command ````go run main.go```` in the folder 
 ````ascii-art-web````
+if the server does not want to work, check the log file, it will give you the reasons why the server does not start
 for work my server use my library [**ascii-art**](https://github.com/minidiams/go.ascii-art)
 with a small modification for a get the result of the ascii-art
-#result :
+# result :
 ### **Reverse Page**
 ![img.png](Controller/assets/img/img.png)
 ### **Output Page**
