@@ -35,4 +35,5 @@ link:
 for run the server execute this command ````go run main.go```` in the folder 
 ````ascii-art-web````
 
-
+for work my server use my library [**ascii-art**](https://git.ytrack.learn.ynov.com/LSASSE/ascii-art)
+with a small modification for a get the result of the ascii-art
