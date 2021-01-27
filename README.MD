@@ -36,9 +36,9 @@ for run the server execute this command ````go run main.go```` in the folder
 for work my server use my library [**ascii-art**](https://github.com/minidiams/go.ascii-art)
 with a small modification for a get the result of the ascii-art
 #result :
-###**Reverse Page**
+### **Reverse Page**
 ![img.png](Controller/assets/img/img.png)
-###**Output Page**
+### **Output Page**
 ![img_1.png](Controller/assets/img/img_1.png)
-###**Print Page**
+### **Print Page**
 ![img_2.png](Controller/assets/img/img_2.png)
