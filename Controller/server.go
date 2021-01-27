@@ -24,5 +24,5 @@ func Server() {
 	server.HandleFunc(Config.Link.Print.UrlPrint, PrintAscii)
 	server.Handle(Config.Link.DownloadsFiles.UrlDownloadsFiles, http.StripPrefix(Config.Link.DownloadsFiles.UrlDownloadsFiles, http.FileServer(http.Dir(Config.Link.DownloadsFiles.PathDownloadsFiles))))
 	server.Handle(Config.Link.LoadsAssets.UrlLoadsAssets, http.StripPrefix(Config.Link.LoadsAssets.UrlLoadsAssets, http.FileServer(http.Dir(Config.Link.LoadsAssets.PathLoadsAssets))))
-	log.Fatal(http.ListenAndServe(Config.Server.Host+":"+Config.Server.Port, RequestLogger(server)))
+	log.Fatal(http.ListenAndServe(Config.Server.Host+":"+Config.Server.Port, LogHTTP(server)))
 }

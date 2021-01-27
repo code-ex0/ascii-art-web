@@ -6,7 +6,7 @@ import (
 )
 
 func Output(file string, sentence [8]string) {
-	f, err := os.Create("module/ascii-art/output/" + file)
+	f, err := os.Create("Controller/ascii-art/output/" + file)
 	if err != nil {
 		log.Fatal(err)
 	}
