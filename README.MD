@@ -1,7 +1,7 @@
 # **Ascii-art-wab**
-
 edit file config.yml to make the settings of the server.
-````server:
+````
+server:
   host: "localhost"
   port: 80
   path:
@@ -10,7 +10,7 @@ edit file config.yml to make the settings of the server.
   log:
     path: "Controller/log/"
     fileName: "log.log"
-
+    
 link:
   home:
     urlHome: "/"
@@ -31,9 +31,10 @@ link:
     urlLoadsAssets: "/load-assets/"
     pathLoadsAssets: "./Controller/assets"
 ````
-
 for run the server execute this command ````go run main.go```` in the folder 
 ````ascii-art-web````
-
-for work my server use my library [**ascii-art**](https://git.ytrack.learn.ynov.com/LSASSE/ascii-art)
+for work my server use my library [**ascii-art**](https://github.com/minidiams/go.ascii-art)
 with a small modification for a get the result of the ascii-art
+
+example
+![img.png](img.png)
