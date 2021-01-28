@@ -52,7 +52,7 @@
             <tr>
                 <td>{{$key}}</td>
                 <td>{{$value.Name}}</td>
-                <td><a id="use-reverse-{{$key}}" class="btn small green light-3 rounded-2 light-shadow-1 reverse"  onClick="ReverseFunc('reverse?a=use-file&f={{$value.Name}}')">Use file {{$value.Name}}</a></td>
+                <td><a id="use-reverse-{{$key}}" class="btn small green light-3 rounded-2 light-shadow-1 reverse"  onClick="ReverseFunc('reverse?action=use-file&file={{$value.Name}}')">Use file {{$value.Name}}</a></td>
                 <td><a class="btn small modal-trigger pointer red light-3 rounded-2 light-shadow-1" data-target="modal-delete-file-{{$key}}">Delete file {{$value.Name}}</a></td>
                 <td><a class="btn small modal-trigger pointer blue light-3 rounded-2 light-shadow-1" href="/download/output/{{$value.Name}}" download="{{$value.Name}}">{{$value.Name}}</a></td>
             </tr>
@@ -71,16 +71,16 @@
                     <a data-target="modal-delete-file-{{$key}}"
                        class="ml-auto btn shadow-1 rounded-1 small primary modal-trigger">Close</a>
                     <a data-target="modal-delete-file-{{$key}}" class="ml-auto btn shadow-1 rounded-1 small primary"
-                       href="reverse?a=delete&f={{$value.Name}}">confirm</a>
+                       href="reverse?action=delete&file={{$value.Name}}">confirm</a>
                 </div>
             </div>
             {{end}}
             </tbody>
         </table>
     </div>
-        <script>
+    <script>
 
-        </script>
+    </script>
     {{end}}
     <form method='POST' enctype="multipart/form-data" class="form-material m-5" name="reverse">
         <div class="grix xs1 sm5">

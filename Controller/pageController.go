@@ -100,14 +100,14 @@ func Reverse(w http.ResponseWriter, r *http.Request) {
 		}
 	} else {
 		url := r.URL.Query()
-		if url.Get("a") != "" && url.Get("f") != "" {
-			if url.Get("a") == "use-file" {
+		if url.Get("action") != "" && url.Get("file") != "" {
+			if url.Get("action") == "use-file" {
 				sizeWindows, _ = strconv.Atoi(url.Get("w"))
-				reverse.FileName = url.Get("f")
+				reverse.FileName = url.Get("file")
 				reverse.Result = ascii_art.Run_ascii_art([]string{"--reverse=" + reverse.FileName}, sizeWindows/8)
 				reverse.Cat = ascii_art.Run_ascii_art([]string{reverse.Result, autoDetectType(reverse.FileName)}, sizeWindows/8)
-			} else if url.Get("a") == "delete" {
-				err := os.Remove(Config.Server.Path.PathServer + Config.Server.Path.PathOutputFile + url.Get("f"))
+			} else if url.Get("action") == "delete" {
+				err := os.Remove(Config.Server.Path.PathServer + Config.Server.Path.PathOutputFile + url.Get("file"))
 				if err != nil {
 					log.Print(err)
 				}
