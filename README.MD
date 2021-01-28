@@ -37,6 +37,8 @@ for run the server execute this command ````go run main.go```` in the folder
 if the server does not want to work, check the log file, it will give you the reasons why the server does not start
 for work my server use my library [**ascii-art**](https://github.com/minidiams/go.ascii-art)
 with a small modification for a get the result of the ascii-art
+
+for run with docker execut this command ````docker build -t my-go-app .```` and for run the docker ````docker run -it -p 8080:8080 my-go-app````
 # result :
 ### **Reverse Page**
 ![img.png](Controller/assets/img/img.png)
