@@ -38,3 +38,204 @@
 2021/01/27 17:30:36 localhost		127.0.0.1:54861		GET		/favicon.ico		HTTP/1.1		404		19		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
 2021/01/27 17:30:36 localhost		127.0.0.1:54861		GET		/load-assets/img/img.png		HTTP/1.1		200		77330		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
 2021/01/27 17:30:36 localhost		127.0.0.1:54861		GET		/favicon.ico		HTTP/1.1		404		19		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 13:58:48 localhost		127.0.0.1:50372		GET		/		HTTP/1.1		200		7173		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		10.9969ms
+2021/01/28 13:58:49 localhost		127.0.0.1:50372		GET		/load-assets/css/github-markdown.css		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		5.9846ms
+2021/01/28 13:58:49 localhost		127.0.0.1:50372		GET		/load-assets/img/img.png		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 13:58:49 localhost		127.0.0.1:50372		GET		/load-assets/img/img_1.png		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 13:58:49 localhost		127.0.0.1:50372		GET		/load-assets/img/img_2.png		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 13:58:49 localhost		127.0.0.1:50372		GET		/load-assets/img/icon.ico		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		3.9885ms
+2021/01/28 13:58:50 localhost		127.0.0.1:50372		GET		/reverse		HTTP/1.1		200		12575		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		4.9864ms
+2021/01/28 13:58:50 localhost		127.0.0.1:50372		GET		/load-assets/css/style.css		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		4.9874ms
+2021/01/28 13:58:50 localhost		127.0.0.1:50375		GET		/load-assets/js/app.js		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		6.721ms
+2021/01/28 13:58:51 localhost		127.0.0.1:50375		GET		/reverse?a=use-file&f=setsetset.txt&w=1510		HTTP/1.1		200		14103		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		10.9704ms
+2021/01/28 13:58:52 localhost		127.0.0.1:50375		GET		/reverse?a=use-file&f=test_1.txt&w=1510		HTTP/1.1		200		14253		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		6.9681ms
+2021/01/28 13:58:52 localhost		127.0.0.1:50375		GET		/reverse?a=use-file&f=test_2.txt&w=1510		HTTP/1.1		200		14451		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		11.9649ms
+2021/01/28 13:58:53 localhost		127.0.0.1:50375		GET		/reverse?a=use-file&f=test_3.txt&w=1510		HTTP/1.1		200		13831		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		10.9701ms
+2021/01/28 13:58:53 localhost		127.0.0.1:50375		GET		/reverse?a=use-file&f=the.txt&w=1510		HTTP/1.1		200		14103		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		3.9902ms
+2021/01/28 13:58:54 localhost		127.0.0.1:50375		GET		/reverse?a=use-file&f=toto.txt&w=1510		HTTP/1.1		200		13971		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		6.981ms
+2021/01/28 13:58:55 localhost		127.0.0.1:50375		GET		/output		HTTP/1.1		200		3150		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		4.9859ms
+2021/01/28 13:58:56 localhost		127.0.0.1:50375		GET		/print		HTTP/1.1		200		5252		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		4.9876ms
+2021/01/28 13:58:58 localhost		127.0.0.1:50375		POST		/print		HTTP/1.1		200		5749		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		997.6µs
+2021/01/28 14:03:22 http: panic serving 127.0.0.1:50427: runtime error: index out of range [1] with length 1
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000065360)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xf4f0e0, 0xc0000aa280)
+	C:/Go/src/runtime/panic.go:975 +0x499
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.getLetter(0xc00008c6c0, 0x1, 0x1, 0xc0000a16c4, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:12 +0x125
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.GetAlphabet(0xc00008c6c0, 0x1, 0x1, 0xc00008c6c0)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:21 +0x113
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.Start(0xc0000a19b8, 0x3, 0x3, 0xb6, 0x4, 0xc000086340)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/start.go:21 +0x73e
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art.Run_ascii_art(...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/run.go:8
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.PrintAscii(0xfed4a0, 0xc000094060, 0xc0000a8000)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/pageController.go:42 +0x516
+net/http.HandlerFunc.ServeHTTP(0xf92ca0, 0xfed4a0, 0xc000094060, 0xc0000a8000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc00004e740, 0xfed4a0, 0xc000094060, 0xc0000a8000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.LogHTTP.func1(0xfed9a0, 0xc0000be000, 0xc0000a8000)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/logController.go:34 +0xf8
+net/http.HandlerFunc.ServeHTTP(0xc000004aa0, 0xfed9a0, 0xc0000be000, 0xc0000a8000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0001601c0, 0xfed9a0, 0xc0000be000, 0xc0000a8000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000065360, 0xfee120, 0xc00008a000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/28 14:03:23 localhost		127.0.0.1:50428		GET		/print		HTTP/1.1		200		5252		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		997.6µs
+2021/01/28 14:03:23 localhost		127.0.0.1:50428		GET		/load-assets/img/icon.ico		HTTP/1.1		200		1150		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		25.9113ms
+2021/01/28 14:03:24 localhost		127.0.0.1:50428		GET		/print		HTTP/1.1		200		5252		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		999.7µs
+2021/01/28 14:03:26 http: panic serving 127.0.0.1:50428: runtime error: index out of range [1] with length 1
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000fe000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xf4f0e0, 0xc0003b5060)
+	C:/Go/src/runtime/panic.go:975 +0x499
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.getLetter(0xc0003b9070, 0x1, 0x1, 0xc00009d6c4, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:12 +0x125
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.GetAlphabet(0xc0003b9070, 0x1, 0x1, 0xc0003b9070)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:21 +0x113
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.Start(0xc00009d9b8, 0x3, 0x3, 0xb6, 0x4, 0xc0003ad0b0)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/start.go:21 +0x73e
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art.Run_ascii_art(...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/run.go:8
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.PrintAscii(0xfed4a0, 0xc0003a15a0, 0xc000194300)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/pageController.go:42 +0x516
+net/http.HandlerFunc.ServeHTTP(0xf92ca0, 0xfed4a0, 0xc0003a15a0, 0xc000194300)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc00004e740, 0xfed4a0, 0xc0003a15a0, 0xc000194300)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.LogHTTP.func1(0xfed9a0, 0xc000160460, 0xc000194300)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/logController.go:34 +0xf8
+net/http.HandlerFunc.ServeHTTP(0xc000004aa0, 0xfed9a0, 0xc000160460, 0xc000194300)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0001601c0, 0xfed9a0, 0xc000160460, 0xc000194300)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000fe000, 0xfee120, 0xc00008b3c0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/28 14:03:27 http: panic serving 127.0.0.1:50433: runtime error: index out of range [1] with length 1
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc000065540)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xf4f0e0, 0xc0000aa7c0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.getLetter(0xc00008d4c0, 0x1, 0x1, 0xc0004076c4, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:12 +0x125
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.GetAlphabet(0xc00008d4c0, 0x1, 0x1, 0xc00008d4c0)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:21 +0x113
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.Start(0xc0004079b8, 0x3, 0x3, 0xb6, 0x4, 0xc000086950)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/start.go:21 +0x73e
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art.Run_ascii_art(...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/run.go:8
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.PrintAscii(0xfed4a0, 0xc0001ea940, 0xc000194500)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/pageController.go:42 +0x516
+net/http.HandlerFunc.ServeHTTP(0xf92ca0, 0xfed4a0, 0xc0001ea940, 0xc000194500)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc00004e740, 0xfed4a0, 0xc0001ea940, 0xc000194500)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.LogHTTP.func1(0xfed9a0, 0xc0001ac0e0, 0xc000194500)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/logController.go:34 +0xf8
+net/http.HandlerFunc.ServeHTTP(0xc000004aa0, 0xfed9a0, 0xc0001ac0e0, 0xc000194500)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0001601c0, 0xfed9a0, 0xc0001ac0e0, 0xc000194500)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000065540, 0xfee120, 0xc0001dcac0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/28 14:03:30 localhost		127.0.0.1:50434		GET		/reverse		HTTP/1.1		200		12575		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		995.8µs
+2021/01/28 14:03:30 http: panic serving 127.0.0.1:50434: runtime error: index out of range [1] with length 1
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc0000fe0a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xf4f0e0, 0xc0000aab20)
+	C:/Go/src/runtime/panic.go:975 +0x499
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.getLetter(0xc00008d770, 0x1, 0x1, 0xc0000a1654, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:12 +0x125
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.GetAlphabet(0xc00008d770, 0x1, 0x1, 0xc00008d770)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:21 +0x113
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.Start(0xc0000a19c8, 0x2, 0x2, 0xbc, 0xc0000aab00, 0x1a)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/start.go:37 +0x5fe
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art.Run_ascii_art(...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/run.go:8
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.Reverse(0xfed4a0, 0xc000417260, 0xc000194800)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/pageController.go:108 +0x35f
+net/http.HandlerFunc.ServeHTTP(0xf92ca8, 0xfed4a0, 0xc000417260, 0xc000194800)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc00004e740, 0xfed4a0, 0xc000417260, 0xc000194800)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.LogHTTP.func1(0xfed9a0, 0xc0001ac2a0, 0xc000194800)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/logController.go:34 +0xf8
+net/http.HandlerFunc.ServeHTTP(0xc000004aa0, 0xfed9a0, 0xc0001ac2a0, 0xc000194800)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0001601c0, 0xfed9a0, 0xc0001ac2a0, 0xc000194800)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000fe0a0, 0xfee120, 0xc0003c9040)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/28 14:03:31 http: panic serving 127.0.0.1:50437: runtime error: index out of range [1] with length 1
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0xc0000fe140)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xf4f0e0, 0xc0000aa160)
+	C:/Go/src/runtime/panic.go:975 +0x499
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.getLetter(0xc000044b60, 0x1, 0x1, 0xc00009d654, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:12 +0x125
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.GetAlphabet(0xc000044b60, 0x1, 0x1, 0xc000044b60)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/ascii-art-alphabet.go:21 +0x113
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module.Start(0xc00009d9c8, 0x2, 0x2, 0xbc, 0xc0000aa140, 0x1a)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/module/start.go:37 +0x5fe
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art.Run_ascii_art(...)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/ascii-art/run.go:8
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.Reverse(0xfed4a0, 0xc0003de300, 0xc0000a8800)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/pageController.go:108 +0x35f
+net/http.HandlerFunc.ServeHTTP(0xf92ca8, 0xfed4a0, 0xc0003de300, 0xc0000a8800)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xc00004e740, 0xfed4a0, 0xc0003de300, 0xc0000a8800)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+_/C_/Users/louis/IdeaProjects/ascii-art-web/Controller.LogHTTP.func1(0xfed9a0, 0xc000160620, 0xc0000a8800)
+	C:/Users/louis/IdeaProjects/ascii-art-web/Controller/logController.go:34 +0xf8
+net/http.HandlerFunc.ServeHTTP(0xc000004aa0, 0xfed9a0, 0xc000160620, 0xc0000a8800)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.serverHandler.ServeHTTP(0xc0001601c0, 0xfed9a0, 0xc000160620, 0xc0000a8800)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000fe140, 0xfee120, 0xc00024c240)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/01/28 14:04:18 localhost		127.0.0.1:50445		GET		/reverse		HTTP/1.1		200		12575		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		1.996ms
+2021/01/28 14:04:18 localhost		127.0.0.1:50445		GET		/load-assets/img/icon.ico		HTTP/1.1		200		1150		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		24.92ms
+2021/01/28 14:04:19 localhost		127.0.0.1:50445		GET		/reverse?a=use-file&f=setsetset.txt&w=1510		HTTP/1.1		200		14103		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		998.6µs
+2021/01/28 14:04:20 localhost		127.0.0.1:50445		GET		/reverse?a=use-file&f=test_1.txt&w=1510		HTTP/1.1		200		14253		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		1.9934ms
+2021/01/28 14:04:20 localhost		127.0.0.1:50445		GET		/reverse?a=use-file&f=test_2.txt&w=1510		HTTP/1.1		200		14451		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		1.9647ms
+2021/01/28 14:04:21 localhost		127.0.0.1:50445		GET		/reverse?a=use-file&f=test_3.txt&w=1510		HTTP/1.1		200		13831		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		998.2µs
+2021/01/28 14:04:21 localhost		127.0.0.1:50445		GET		/reverse?a=use-file&f=the.txt&w=1510		HTTP/1.1		200		14103		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		997.6µs
+2021/01/28 14:32:23 localhost		127.0.0.1:50776		GET		/		HTTP/1.1		200		7173		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		1.9952ms
+2021/01/28 14:32:23 localhost		127.0.0.1:50776		GET		/load-assets/css/github-markdown.css		HTTP/1.1		200		18318		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		25.9315ms
+2021/01/28 14:32:23 localhost		127.0.0.1:50776		GET		/load-assets/img/img.png		HTTP/1.1		200		77330		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		2.0118ms
+2021/01/28 14:32:23 localhost		127.0.0.1:50776		GET		/load-assets/img/img_1.png		HTTP/1.1		200		30728		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		980.6µs
+2021/01/28 14:32:23 localhost		127.0.0.1:50776		GET		/load-assets/img/img_2.png		HTTP/1.1		200		37065		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		998.1µs
+2021/01/28 14:32:24 localhost		127.0.0.1:50776		GET		/load-assets/img/icon.ico		HTTP/1.1		200		1150		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 14:32:25 localhost		127.0.0.1:50776		GET		/reverse		HTTP/1.1		200		12575		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		995.6µs
+2021/01/28 14:32:25 localhost		127.0.0.1:50776		GET		/load-assets/css/style.css		HTTP/1.1		200		66		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		997.6µs
+2021/01/28 14:32:25 localhost		127.0.0.1:50782		GET		/load-assets/js/app.js		HTTP/1.1		200		540		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 14:32:26 localhost		127.0.0.1:50782		GET		/reverse?a=use-file&f=setsetset.txt&w=1126		HTTP/1.1		200		14111		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		1.9905ms
+2021/01/28 14:32:28 localhost		127.0.0.1:50782		GET		/output		HTTP/1.1		200		3150		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		997.4µs
+2021/01/28 14:32:28 localhost		127.0.0.1:50782		GET		/print		HTTP/1.1		200		5252		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		997µs
+2021/01/28 14:32:41 localhost		127.0.0.1:50782		POST		/print		HTTP/1.1		200		5526		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		2.9938ms
+2021/01/28 14:33:01 localhost		127.0.0.1:50796		POST		/print		HTTP/1.1		200		5478		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		1.9965ms
+2021/01/28 17:02:48 localhost		127.0.0.1:52055		GET		/		HTTP/1.1		200		7173		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		926.5µs
+2021/01/28 17:02:48 localhost		127.0.0.1:52055		GET		/load-assets/css/github-markdown.css		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 17:02:48 localhost		127.0.0.1:52055		GET		/load-assets/img/img.png		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 17:02:48 localhost		127.0.0.1:52055		GET		/load-assets/img/img_1.png		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 17:02:48 localhost		127.0.0.1:52055		GET		/load-assets/img/img_2.png		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 17:02:49 localhost		127.0.0.1:52055		GET		/load-assets/img/icon.ico		HTTP/1.1		304		0		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		0s
+2021/01/28 17:02:50 localhost		127.0.0.1:52055		GET		/reverse		HTTP/1.1		200		12575		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		2.0032ms
+2021/01/28 17:02:50 localhost		127.0.0.1:52055		GET		/reverse?a=use-file&f=setsetset.txt&w=1510		HTTP/1.1		200		14103		Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36		991µs

@@ -17,7 +17,7 @@ func getLetter(text []string, s string) (result [8]string) {
 
 func GetAlphabet(file []string) (result *_struct.Alphabet) {
 	result = &_struct.Alphabet{LetterAscii: make(map[string][8]string)}
-	for i := ' '; i < '~'; i++ {
+	for i := ' '; i <= '~'; i++ {
 		result.LetterAscii[string(i)] = getLetter(file, string(i))
 	}
 	return
